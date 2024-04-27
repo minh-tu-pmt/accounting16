@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="act_indenture_tree_view" model="ir.ui.view">
+        <field name="name">act_indenture_tree_view</field>
+        <field name="model">act.indenture</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code_inden"/>
+                <field name="name_inden"/>
+                <field name="type_inden"/>
+                <field name="date_inden"/>
+                <field name="partner_id"/>
+                <field name="account_id"/>
+                <field name="value"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="act_indenture_search_view" model="ir.ui.view">
+        <field name="name">act.indenture.search</field>
+        <field name="model">act.indenture</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="code_inden"/>
+                <field name="name_inden"/>
+                <field name="type_inden"/>
+                <field name="num_inden"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="act_indenture_form_view" model="ir.ui.view">
+        <field name="name">act.indenture.form</field>
+        <field name="model">act.indenture</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                        <field name="state" widget="statusbar" statusbar_visible="non_active,active" options="{'clickable': '1','fold_field':'fold'}"/>
+                    </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code_inden"/>
+                            <field name="name_inden"/>
+                            <field name="type_inden"/>
+                        </group>
+                        <group string="Thông tin tài chính">
+                            <field name="uom_currency_id"/>
+                            <field name="foreign_currency_vl"/>
+                            <field name="value"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Thông tin chung">
+                            <field name="num_inden"/>
+                            <field name="date_inden"/>
+                            <field name="date_br_loan"/>
+                            <field name="end_inden"/>
+                            <field name="account_id"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Thông tin lãi suất">
+                            <field name="act_performent_ids">
+                                <tree editable="bottom">
+                                    <field name="date_active"/>
+                                    <field name="core_performance"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Thông tin thanh toán">
+                            <field name="act_payment_inden_ids">
+                                <tree editable="bottom">
+                                    <field name="date_pay"/>
+                                    <field name="foreign_currency_money"/>
+                                    <field name="money_pay"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_act_indenture" model="ir.actions.act_window">
+        <field name="name">Khế ước</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">act.indenture</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+    </record>
+</odoo>

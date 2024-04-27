@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+
+        <record model="ir.ui.view" id="list_view_account_synthetic_cashout">
+            <field name="name">list.view.account.synthetic</field>
+            <field name="model">account.synthetic</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="partner_id"/>
+                    <field name="payment_type_detail"/>
+                    <field name="state"/>
+                    <field name="address"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="form_view_account_synthetic_cashout">
+            <field name="name">form.view.account.synthetic</field>
+            <field name="model">account.synthetic</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_confirm" string="Confirm" type="object" class="oe_highlight"
+                                attrs="{'invisible': [('state', '!=', 'draft')]}" data-hotkey="v"/>
+                        <button name="action_register_payment" string="Register Payment" type="object"
+                                class="oe_highlight" attrs="{'invisible': [('state', '!=', 'confirm')]}"
+                                data-hotkey="v"/>
+                        <button name="action_draft" string="Đặt lại dự thảo" type="object"
+                                attrs="{'invisible': [('state', '!=', 'posted')]}"
+                                data-hotkey="v"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="button_open_account_payment" type="object" class="oe_stat_button" icon="fa-bars">
+                                    <field name="count_paymnet"/>
+                                    <span>Thanh toán</span>
+                            </button>
+                            <button name="button_open_account_move" type="object" class="oe_stat_button" icon="fa-bars">
+                                <field name="count_move"/>
+                                <span>Bút toán</span>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1><field name="name" readonly="1"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="partner_id"
+                                       attrs="{'readonly': [('state','in', ['posted'])]}"/>
+                                <field name="address" attrs="{'readonly': [('state','in',['posted'])]}"/>
+                                <field name="company_id" invisible="True"/>
+                                <field name="type_journal" invisible="True" />
+                                <field name="receiver" />
+                                <field name="description" attrs="{'readonly': [('state','in',['posted'])]}"/>
+                                <field name="amount" attrs="{'readonly': ['|',('state','in',['posted']), ('payment_type_detail','=', 'follow_partner')]}"/>
+                            </group>
+
+                            <group>
+                                <field name="payment_type_detail" attrs="{'readonly': [('state','in',['posted'])]}"/>
+                                <field name="form_of_allocation"/>
+                                <field name="date" attrs="{'readonly': [('state','in',['posted'])]}" required="True"/>
+                                <field name="journal_id" context="{'type_journal': type_journal}" attrs="{'readonly': [('state','in',['posted'])]}" required="True"/>
+                                <field name="type_pay" required="True" invisible="True"/>
+                                <field name="check_currency" invisible="True"/>
+                                <field name="currency_id" options="{'no_create': True, 'no_open': True}" required="1" attrs="{'readonly': [('state','in',['posted'])]}" groups="base.group_multi_currency"/>
+                                <field name="rate_currency" required="True"/>
+                                <field name="partner_bank_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="follow_partner" string="Chi tiết theo khách hàng" attrs="{'invisible': [('payment_type_detail','=','follow_detail_invoice')]}">
+                                <button name="action_create_tax" string="Tạo thuế GTGT" type="object" class="oe_highlight"
+                                        attrs="{'invisible': [('state', '!=', 'draft')]}" data-hotkey="v"/>
+                                <field name="detail_account_payment_partner_ids" attrs="{'readonly': [('state','in',['posted'])]}">
+                                    <tree editable="bottom">
+                                        <field name="account_id"/>
+                                        <field name="partner_id"/>
+                                        <field name="company_currency_id" invisible="True"/>
+                                        <field name="currency_id" invisible="True"/>
+                                        <field name="base_value" widget="monetary" attrs="{'readonly': [('parent.check_currency','=', True)]}"/>
+                                        <field name="value" widget="monetary"/>
+                                        <field name="tax" widget="many2many_tags"/>
+                                        <field name="description"/>
+                                        <field name="department_id"/>
+                                        <field name="analytic_account_id"/>
+                                        <field name="indenture_id"/>
+                                        <field name="fee_group_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="follow_invoice" string="Chi tiết theo hóa đơn" attrs="{'invisible': [('payment_type_detail','=','follow_partner')]}">
+                                <field name="detail_account_payment_invoice_ids" attrs="{'readonly': [('state','in',['posted'])]}">
+                                    <tree editable="bottom">
+                                        <field name="chosing"/>
+                                        <field name="origin"/>
+                                        <field name="invoice_date"/>
+                                        <field name="account_id" readonly="True"/>
+                                        <field name="partner_id"/>
+                                        <field name="base_value" widget="monetary" attrs="{'readonly': [('parent.check_currency','=', True)]}"/>
+                                        <field name="company_currency_id"/>
+                                        <field name="currency_id" invisible="True"/>
+                                        <field name="paid" widget="monetary"/>
+                                        <field name="amount_redisual" widget="monetary"/>
+                                        <field name="value" widget="monetary"/>
+                                        <field name="description"/>
+                                        <field name="analytic_account_id"/>
+                                        <field name="department_id"/>
+                                        <field name="item_fee_id"/>
+                                        <field name="indenture_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="gtgt" string="Thuế GTGT đầu vào" attrs="{'invisible': [('payment_type_detail','!=','follow_partner'),('state','=','draft')]}">
+                                <field name="detail_account_vat_gtgt_ids">
+                                    <tree editable="bottom">
+                                        <field name="ref"/>
+                                        <field name="move_group"/>
+                                        <field name="sign" required="True"/>
+                                        <field name="invoice_number" required="True"/>
+                                        <field name="invoice_date" required="True"/>
+                                        <field name="vendor" required="True"/>
+                                        <field name="address"/>
+                                        <field name="tax_code" required="True"/>
+                                        <field name="total_amount_before_tax"/>
+                                        <field name="tax"/>
+                                        <field name="amount_tax"/>
+                                        <field name="amount_total" />
+                                        <field name="account_id" />
+                                    </tree>
+                                </field>
+                            </page>
+                              <page name="expenditure" string="Uỷ nghiệm chi">
+                                <field name="detail_account_expenditure_ids">
+                                    <tree editable="bottom">
+                                        <field name="partner_receiving_money"/>
+                                        <field name="num_account"/>
+                                        <field name="bank"/>
+                                        <field name="province"/>
+                                        <field name="content"/>
+                                        <field name="fee_th"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+         <record model="ir.actions.act_window" id="action_open_payment_cashout">
+            <field name="name">Phiếu chi tiền mặt</field>
+            <field name="res_model">account.synthetic</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree'}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('form_view_account_synthetic_cashout')})]"/>
+            <field name="domain">[('type_pay','=','outbound')]</field>
+            <field name="context">{'default_type_pay': 'outbound','default_type_journal': 'cash'}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No record found
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

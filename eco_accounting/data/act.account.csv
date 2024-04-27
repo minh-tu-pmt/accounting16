@@ -1,0 +1,536 @@
+id,code,name,parent_id/id,level,is_debt_account,is_general_account,account_type,allowed_compare,chart_template_id/id
+chart111,111,Tiền mặt,,1,0,1,asset_cash,,l10n_vn.vn_template
+chart1111,1111,Tiền Việt Nam,chart111,2,0,0,asset_cash,,l10n_vn.vn_template
+chart1112,1112,Ngoại tệ,chart111,2,0,0,asset_cash,,l10n_vn.vn_template
+chart1113,1113,Vàng tiền tệ,chart111,2,0,0,asset_cash,,l10n_vn.vn_template
+chart112,112,Tiền gửi ngân hàng,,1,0,1,asset_cash,,l10n_vn.vn_template
+chart1121,1121,Tiền Việt Nam,chart112,2,0,1,asset_cash,,l10n_vn.vn_template
+chart11211,11211,Tiền Việt Nam - Ngân hàng...,chart1121,3,0,0,asset_cash,,l10n_vn.vn_template
+chart1122,1122,Ngoại tệ,chart112,2,0,1,asset_cash,,l10n_vn.vn_template
+chart11221,11221,Ngoại tệ,chart1122,3,0,1,asset_cash,,l10n_vn.vn_template
+chart112211,112211,Ngoại tệ Ngân hàng...,chart11221,4,0,0,asset_cash,,l10n_vn.vn_template
+chart1123,1123,Vàng tiền tệ,chart112,2,0,0,asset_cash,,l10n_vn.vn_template
+chart113,113,Tiền đang chuyển,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1131,1131,Tiền Việt Nam,chart113,2,0,0,asset_current,,l10n_vn.vn_template
+chart1132,1132,Ngoại tệ,chart113,2,0,0,asset_current,,l10n_vn.vn_template
+chart121,121,Chứng khoán kinh doanh,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1211,1211,Chứng khoán kinh doanh: cổ phiếu,chart121,2,0,0,asset_current,,l10n_vn.vn_template
+chart1212,1212,Chứng khoán kinh doanh: trái phiếu,chart121,2,0,0,asset_current,,l10n_vn.vn_template
+chart1218,1218,Chứng khoán và công cụ tài chính khác,chart121,2,0,0,asset_current,,l10n_vn.vn_template
+chart128,128,Đầu tư nắm giữ đến ngày đáo hạn,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1281,1281,Tiền gởi có kỳ hạn,chart128,2,0,1,asset_current,,l10n_vn.vn_template
+chart12811,12811,Tiền gởi có kỳ hạn: <= 3 tháng,chart1281,3,0,0,asset_current,,l10n_vn.vn_template
+chart12812,12812,Tiền gởi có kỳ hạn: > 3 tháng và <= 12 tháng,chart1281,3,0,0,asset_current,,l10n_vn.vn_template
+chart12813,12813,Tiền gởi có kỳ hạn: > 12 tháng,chart1281,3,0,0,asset_current,,l10n_vn.vn_template
+chart1282,1282,Trái phiếu,chart128,2,0,1,asset_current,,l10n_vn.vn_template
+chart12821,12821,Trái phiếu: ngắn hạn,chart1282,3,0,0,asset_current,,l10n_vn.vn_template
+chart12822,12822,Trái phiếu: dài hạn,chart1282,3,0,0,asset_current,,l10n_vn.vn_template
+chart1283,1283,Cho vay,chart128,2,0,1,asset_current,,l10n_vn.vn_template
+chart12831,12831,Cho vay: ngắn hạn,chart1283,3,0,0,asset_current,,l10n_vn.vn_template
+chart12832,12832,Cho vay: dài hạn,chart1283,3,0,0,asset_current,,l10n_vn.vn_template
+chart1288,1288,Các khoản đầu tư khác nắm giữ đến ngày đáo hạn,chart128,2,0,1,asset_current,,l10n_vn.vn_template
+chart12881,12881,Các khoản đầu tư khác nắm giữ đến ngày đáo hạn: <= 3 tháng,chart1288,3,0,0,asset_current,,l10n_vn.vn_template
+chart12882,12882,Các khoản đầu tư khác nắm giữ đến ngày đáo hạn: > 3 tháng và <= 12 tháng,chart1288,3,0,0,asset_current,,l10n_vn.vn_template
+chart12883,12883,Các khoản đầu tư khác nắm giữ đến ngày đáo hạn: > 12 tháng,chart1288,3,0,0,asset_current,,l10n_vn.vn_template
+chart131,131,Phải thu khách hàng,,1,1,1,asset_receivable,1,l10n_vn.vn_template
+chart1311,1311,Phải thu ngắn hạn khách hàng,chart131,2,1,1,asset_receivable,1,l10n_vn.vn_template
+chart13111,13111,Phải thu ngắn hạn khách hàng: hoạt động SXKD,chart1311,3,1,0,asset_receivable,1,l10n_vn.vn_template
+chart13112,13112,Phải thu ngắn hạn khách hàng: hoạt động đầu tư,chart1311,3,1,0,asset_receivable,1,l10n_vn.vn_template
+chart13113,13113,Phải thu ngắn hạn khách hàng: hoạt động tài chính,chart1311,3,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1312,1312,Phải thu dài hạn khách hàng,chart131,2,1,1,asset_receivable,1,l10n_vn.vn_template
+chart13121,13121,Phải thu dài hạn khách hàng: hoạt động SXKD,chart1312,3,1,0,asset_receivable,1,l10n_vn.vn_template
+chart13122,13122,Phải thu dài hạn khách hàng: hoạt động đầu tư,chart1312,3,1,0,asset_receivable,1,l10n_vn.vn_template
+chart13123,13123,Phải thu dài hạn khách hàng: hoạt động tài chính,chart1312,3,1,0,asset_receivable,1,l10n_vn.vn_template
+chart133,133,Thuế GTGT được khấu trừ,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1331,1331,Thuế GTGT được khấu trừ của hàng hoá dịch vụ,chart133,2,0,1,asset_current,,l10n_vn.vn_template
+chart13311,13311,Thuế GTGT được khấu trừ của hàng hoá dịch vụ,chart1331,3,0,1,asset_current,,l10n_vn.vn_template
+chart133111,133111,Thuế GTGT được khấu trừ của hàng hoá dịch vụ: HĐ SXKD,chart13311,4,0,0,asset_current,,l10n_vn.vn_template
+chart133112,133112,Thuế GTGT được khấu trừ của hàng hoá dịch vụ: HĐ đầu tư,chart13311,4,0,0,asset_current,,l10n_vn.vn_template
+chart133113,133113,Thuế GTGT được khấu trừ của hàng hoá dịch vụ: HĐ tài chính,chart13311,4,0,0,asset_current,,l10n_vn.vn_template
+chart13312,13312,Thuế GTGT được khấu trừ của hàng nhập khẩu,chart1331,3,0,1,asset_current,,l10n_vn.vn_template
+chart133121,133121,Thuế GTGT được khấu trừ của hàng nhập khẩu: HĐ SXKD,chart13312,4,0,0,asset_current,,l10n_vn.vn_template
+chart133122,133122,Thuế GTGT được khấu trừ của hàng nhập khẩu: HĐ đầu tư,chart13312,4,0,0,asset_current,,l10n_vn.vn_template
+chart133123,133123,Thuế GTGT được khấu trừ của hàng nhập khẩu: HĐ tài chính,chart13312,4,0,0,asset_current,,l10n_vn.vn_template
+chart13313,13313,"Thuế GTGT trả lại nhà c.cấp, giảm giá hàng mua",chart1331,3,0,1,asset_current,,l10n_vn.vn_template
+chart133131,133131,"Thuế GTGT trả lại nhà c.cấp, giảm giá hàng mua: HĐ SXKD",chart13313,4,0,0,asset_current,,l10n_vn.vn_template
+chart133132,133132,"Thuế GTGT trả lại nhà c.cấp, giảm giá hàng mua: HĐ đầu tư",chart13313,4,0,0,asset_current,,l10n_vn.vn_template
+chart133133,133133,"Thuế GTGT trả lại nhà c.cấp, giảm giá hàng mua: HĐ tài chính",chart13313,4,0,0,asset_current,,l10n_vn.vn_template
+chart13314,13314,Thuế GTGT được hoàn lại,chart1331,3,0,1,asset_current,,l10n_vn.vn_template
+chart133141,133141,Thuế GTGT đề nghị hoàn lại,chart13314,4,0,1,asset_current,,l10n_vn.vn_template
+chart1331411,1331411,Thuế GTGT đề nghị hoàn lại: HĐ SXKD,chart133141,5,0,0,asset_current,,l10n_vn.vn_template
+chart1331412,1331412,Thuế GTGT đề nghị hoàn lại: HĐ đầu tư,chart133141,5,0,0,asset_current,,l10n_vn.vn_template
+chart1331413,1331413,Thuế GTGT đề nghị hoàn lại: HĐ tài chính,chart133141,5,0,0,asset_current,,l10n_vn.vn_template
+chart133142,133142,Thuế GTGT thực tế được hoàn lại,chart13314,4,0,1,asset_current,,l10n_vn.vn_template
+chart1331421,1331421,Thuế GTGT thực tế được hoàn lại: HĐ SXKD,chart133142,5,0,0,asset_current,,l10n_vn.vn_template
+chart1331422,1331422,Thuế GTGT thực tế được hoàn lại: HĐ đầu tư,chart133142,5,0,0,asset_current,,l10n_vn.vn_template
+chart1331423,1331423,Thuế GTGT thực tế được hoàn lại: HĐ tài chính,chart133142,5,0,0,asset_current,,l10n_vn.vn_template
+chart1332,1332,Thuế GTGT được khấu trừ của TSCĐ,chart133,2,0,1,asset_current,,l10n_vn.vn_template
+chart13321,13321,Thuế GTGT được khấu trừ của TSCĐ: Trong nước,chart1332,3,0,0,asset_current,,l10n_vn.vn_template
+chart13322,13322,Thuế GTGT được khấu trừ của TSCĐ: Nhập khẩu,chart1332,3,0,0,asset_current,,l10n_vn.vn_template
+chart136,136,Phải thu nội bộ,,1,0,1,asset_receivable,1,l10n_vn.vn_template
+chart1361,1361,Vốn kinh doanh ở các đơn vị trực thuộc,chart136,2,0,0,asset_receivable,1,l10n_vn.vn_template
+chart1362,1362,Phải thu nội bộ về chênh lệch tỷ giá,chart136,2,0,1,asset_receivable,1,l10n_vn.vn_template
+chart13621,13621,Phải thu nội bộ về chênh lệch tỷ giá: ngắn hạn,chart1362,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13622,13622,Phải thu nội bộ về chênh lệch tỷ giá: dài hạn,chart1362,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart1363,1363,Phải thu nội bộ về chi phí đi vay đủ điều kiện được vốn hoá,chart136,2,0,1,asset_receivable,1,l10n_vn.vn_template
+chart13631,13631,Phải thu nội bộ về chi phí đi vay đủ điều kiện được vốn hoá: ngắn hạn,chart1363,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13632,13632,Phải thu nội bộ về chi phí đi vay đủ điều kiện được vốn hoá: dài hạn,chart1363,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart1368,1368,Phải thu nội bộ khác,chart136,2,0,1,asset_receivable,1,l10n_vn.vn_template
+chart13681,13681,Phải thu nội bộ khác: ngắn hạn,chart1368,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13682,13682,Phải thu nội bộ khác: dài hạn,chart1368,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart138,138,Phải thu khác,,1,0,1,asset_receivable,1,l10n_vn.vn_template
+chart1381,1381,Tài sản thiếu chờ xử lý,chart138,2,0,1,asset_receivable,1,l10n_vn.vn_template
+chart13811,13811,Tài sản thiếu chờ xử lý: tiền,chart1381,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13812,13812,Tài sản thiếu chờ xử lý: hàng tồn kho,chart1381,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13813,13813,Tài sản thiếu chờ xử lý: tài sản cố định,chart1381,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13818,13818,Tài sản thiếu chờ xử lý: tài sản khác,chart1381,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart1385,1385,Phải thu về cổ phần hóa,chart138,2,0,1,asset_receivable,1,l10n_vn.vn_template
+chart13851,13851,Phải thu về cổ phần hóa: ngắn hạn,chart1385,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart13852,13852,Phải thu về cổ phần hóa: dài hạn,chart1385,3,0,0,asset_receivable,1,l10n_vn.vn_template
+chart1388,1388,Phải thu khác,chart138,2,1,1,asset_receivable,1,l10n_vn.vn_template
+chart13881,13881,Phải thu ngắn hạn khác,chart1388,3,1,1,asset_receivable,1,l10n_vn.vn_template
+chart138811,138811,Phải thu ngắn hạn khác: HĐ SXKD,chart13881,4,1,1,asset_receivable,1,l10n_vn.vn_template
+chart1388111,1388111,Cho mượn,chart138811,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1388112,1388112,Các khoản chi hộ,chart138811,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1388118,1388118,Phải thu ngắn hạn HĐ SXKD khác,chart138811,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart138812,138812,Phải thu ngắn hạn khác: HĐ đầu tư,chart13881,4,1,1,asset_receivable,1,l10n_vn.vn_template
+chart1388121,1388121,"Phải thu về cổ tức, lợi nhuận được chia",chart138812,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1388128,1388128,Phải thu ngắn hạn HĐ đầu tư khác,chart138812,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart138813,138813,Phải thu ngắn hạn khác: HĐ tài chính,chart13881,4,1,0,asset_receivable,1,l10n_vn.vn_template
+chart13882,13882,Phải thu dài hạn khác,chart1388,3,1,1,asset_receivable,1,l10n_vn.vn_template
+chart138821,138821,Phải thu dài hạn khác: HĐ SXKD,chart13882,4,1,1,asset_receivable,1,l10n_vn.vn_template
+chart1388211,1388211,Cho mượn,chart138821,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1388212,1388212,Các khoản chi hộ,chart138821,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1388218,1388218,Phải thu dài hạn HĐ SXKD khác,chart138821,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart138822,138822,Phải thu dài hạn khác: HĐ đầu tư,chart13882,4,1,1,asset_receivable,1,l10n_vn.vn_template
+chart1388221,1388221,"Phải thu về cổ tức, lợi nhuận được chia",chart138822,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1388228,1388228,Phải thu dài hạn HĐ đầu tư khác,chart138822,5,1,0,asset_receivable,1,l10n_vn.vn_template
+chart138823,138823,Phải thu dài hạn khác: HĐ tài chính,chart13882,4,1,0,asset_receivable,1,l10n_vn.vn_template
+chart141,141,Tạm ứng,,1,1,1,asset_receivable,1,l10n_vn.vn_template
+chart1411,1411,Tạm ứng: ngắn hạn,chart141,2,1,0,asset_receivable,1,l10n_vn.vn_template
+chart1412,1412,Tạm ứng: dài hạn,chart141,2,1,0,asset_receivable,1,l10n_vn.vn_template
+chart151,151,Hàng mua đang đi trên đừơng,,1,0,0,asset_current,,l10n_vn.vn_template
+chart152,152,"Nguyên liệu, vật liệu",,1,0,1,asset_current,,l10n_vn.vn_template
+chart1521,1521,"Nguyên liệu, vật liệu chính",chart152,2,0,0,asset_current,,l10n_vn.vn_template
+chart1522,1522,Vật liệu phụ,chart152,2,0,0,asset_current,,l10n_vn.vn_template
+chart1523,1523,Nhiên liệu,chart152,2,0,0,asset_current,,l10n_vn.vn_template
+chart1524,1524,Phụ tùng,chart152,2,0,0,asset_current,,l10n_vn.vn_template
+chart1526,1526,Thiết bị XDCB,chart152,2,0,0,asset_current,,l10n_vn.vn_template
+chart1528,1528,Vật liệu khác,chart152,2,0,0,asset_current,,l10n_vn.vn_template
+chart153,153,"Công cụ, dụng cụ",,1,0,1,asset_current,,l10n_vn.vn_template
+chart1531,1531,"Công cụ, dụng cụ",chart153,2,0,0,asset_current,,l10n_vn.vn_template
+chart1532,1532,Bao bì luân chuyển,chart153,2,0,0,asset_current,,l10n_vn.vn_template
+chart1533,1533,Đồ dùng cho thuê,chart153,2,0,0,asset_current,,l10n_vn.vn_template
+chart1534,1534,"Thiết bị, phụ tùng thay thế",chart153,2,0,1,asset_current,,l10n_vn.vn_template
+chart15341,15341,"Thiết bị, phụ tùng thay thế: ngắn hạn",chart1534,3,0,0,asset_current,,l10n_vn.vn_template
+chart15342,15342,"Thiết bị, phụ tùng thay thế: dài hạn",chart1534,3,0,0,asset_current,,l10n_vn.vn_template
+chart154,154,Chi phí SXKD dở dang,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1541,1541,Chi phí SXKD dở dang: ngắn hạn,chart154,2,0,0,asset_current,,l10n_vn.vn_template
+chart1542,1542,Chi phí SXKD dở dang: dài hạn,chart154,2,0,0,asset_current,,l10n_vn.vn_template
+chart155,155,Thành phẩm,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1551,1551,Thành phẩm nhập kho,chart155,2,0,0,asset_current,,l10n_vn.vn_template
+chart1557,1557,Thành phẩm bất động sản,chart155,2,0,0,asset_current,,l10n_vn.vn_template
+chart156,156,Hàng hóa,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1561,1561,Giá mua hàng hóa,chart156,2,0,0,asset_current,,l10n_vn.vn_template
+chart1562,1562,Chi phí thu mua hàng hóa,chart156,2,0,0,asset_current,,l10n_vn.vn_template
+chart1567,1567,Hàng hóa bất động sản,chart156,2,0,0,asset_current,,l10n_vn.vn_template
+chart157,157,Hàng gửi đi bán,,1,0,0,asset_current,,l10n_vn.vn_template
+chart158,158,Hàng hóa kho bảo thuế,,1,0,0,asset_current,,l10n_vn.vn_template
+chart161,161,Chi sự nghiệp,,1,0,1,asset_current,,l10n_vn.vn_template
+chart1611,1611,Chi sự nghiệp: Năm trứơc,chart161,2,0,0,asset_current,,l10n_vn.vn_template
+chart1612,1612,Chi sự nghiệp: Năm nay,chart161,2,0,0,asset_current,,l10n_vn.vn_template
+chart171,171,Giao dịch mua lại trái phiếu chính phủ,,1,0,0,asset_current,,l10n_vn.vn_template
+chart211,211,Tài sản cố định hữu hình,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2111,2111,"Nhà cửa, vật kiến trúc",chart211,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2112,2112,"Máy móc, thiết bị",chart211,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2113,2113,"Phương tiện vận tải, truyền dẫn",chart211,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2114,2114,"Thiết bị, dụng cụ quản lý",chart211,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2115,2115,"Cây lâu năm, súc vật làm việc cho SP",chart211,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2118,2118,Tài sản cố định khác,chart211,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart212,212,TSCĐ thuê tài chính,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2121,2121,TSCĐ hữu hình thuê tài chính,chart212,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21211,21211,"Nhà cửa, vật kiến trúc",chart2121,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21212,21212,Máy móc thiết bị,chart2121,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21213,21213,Phương tiện vận tải,chart2121,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21214,21214,"Thiết bị, dụng cụ quản lý",chart2121,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21218,21218,TSCĐ hữu hình khác,chart2121,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart2122,2122,TSCĐ vô hình thuê tài chính,chart212,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21221,21221,TSCĐ vô hình thuê tài chính,chart2122,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart213,213,TSCĐ vô hình,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2131,2131,Quyền sử dụng đất,chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2132,2132,Quyền phát hành,chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2133,2133,"Bản quyền, bằng sáng chế",chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2134,2134,"Nhãn hiệu, tên thương mại",chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2135,2135,Chương trình phần mềm,chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2136,2136,Giấy phép và giấy phép nhượng quyền,chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2138,2138,TSCĐ vô hình khác,chart213,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart214,214,Hao mòn tài sản cố định,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2141,2141,Hao mòn TSCĐ hữu hình,chart214,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21411,21411,"Hao mòn nhà cửa, vật kiến trúc",chart2141,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21412,21412,"Hao mòn máy móc, thiết bị",chart2141,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21413,21413,Hao mòn phương tiện vận tải,chart2141,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21414,21414,"Hao mòn dụng cụ, thiết bị quản lý",chart2141,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21415,21415,"Hao mòn cây trồng, vật nuôi làm việc cho SP",chart2141,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21418,21418,Hao mòn TSCĐ khác,chart2141,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart2142,2142,Hao mòn TSCĐ thuê tài chính,chart214,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21421,21421,Hao mòn TSCĐ hữu hình thuê tài chính,chart2142,3,0,1,asset_non_current,,l10n_vn.vn_template
+chart214211,214211,"Hao mòn TSCĐ đi thuê: Nhà cửa, vật kiến trúc",chart21421,4,0,0,asset_non_current,,l10n_vn.vn_template
+chart214212,214212,Hao mòn TSCĐ đi thuê: Máy móc thiết bị,chart21421,4,0,0,asset_non_current,,l10n_vn.vn_template
+chart214213,214213,Hao mòn TSCĐ đi thuê: Phương tiện vận tải,chart21421,4,0,0,asset_non_current,,l10n_vn.vn_template
+chart214214,214214,"Hao mòn TSCĐ đi thuê: Thiết bị, dụng cụ quản lý",chart21421,4,0,0,asset_non_current,,l10n_vn.vn_template
+chart214218,214218,Hao mòn TSCĐ đi thuê: TSCĐ hữu hình khác,chart21421,4,0,0,asset_non_current,,l10n_vn.vn_template
+chart21422,21422,Hao mòn TSCĐ vô hình thuê tài chính,chart2142,3,0,1,asset_non_current,,l10n_vn.vn_template
+chart214221,214221,Hao mòn TSCĐ vô hình thuê tài chính,chart21422,4,0,0,asset_non_current,,l10n_vn.vn_template
+chart2143,2143,Hao mòn TSCĐ vô hình,chart214,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21431,21431,Hao mòn quyền sử dụng đất,chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21432,21432,Hao mòn quyền phát hành,chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21433,21433,"Hao mòn bản quyền, bằng sáng chế",chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21434,21434,Hao mòn nhãn hiệu hàng hóa,chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21435,21435,Hao mòn phần mềm kế toán,chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21436,21436,Hao mòn giấy phép và giấy phép nhượng quyền,chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21438,21438,Hao mòn TSCĐ vô hình khác,chart2143,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart2147,2147,Hao mòn bất động sản đầu tư,chart214,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21471,21471,Hao mòn bất động sản đầu tư: Quyền sử dụng đất,chart2147,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21472,21472,Hao mòn bất động sản đầu tư: Nhà,chart2147,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21473,21473,Hao mòn bất động sản đầu tư: Nhà & quyền sử dụng,chart2147,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21474,21474,Hao mòn bất động sản đầu tư: cơ sở hạ tầng,chart2147,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart217,217,Bất động sản đầu tư,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2171,2171,Bất động sản đầu tư: cho thuê,chart217,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21711,21711,Bất động sản đầu tư: Quyền sử dụng đất,chart2171,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21712,21712,Bất động sản đầu tư: Nhà,chart2171,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21713,21713,Bất động sản đầu tư: Nhà và quyền sử dụng đất,chart2171,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21714,21714,Bất động sản đầu tư: Cơ sở hạ tầng,chart2171,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart2172,2172,Bất động sản đầu tư: chờ tăng giá,chart217,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart21721,21721,Bất động sản đầu tư chờ tăng giá: Quyền sử dụng đất,chart2172,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21722,21722,Bất động sản đầu tư chờ tăng giá: Nhà,chart2172,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21723,21723,Bất động sản đầu tư chờ tăng giá: Nhà và quyền sử dụng đất,chart2172,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart21724,21724,Bất động sản đầu tư chờ tăng giá: Cơ sở hạ tầng,chart2172,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart221,221,Đầu tư vào công ty con,,1,0,0,asset_non_current,,l10n_vn.vn_template
+chart222,222,"Đầu tư vào công ty liên doanh, liên kết",,1,0,0,asset_non_current,,l10n_vn.vn_template
+chart223,223,Đầu tư vào công ty liên kết,,1,0,0,asset_non_current,,l10n_vn.vn_template
+chart228,228,Đầu tư khác,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2281,2281,Đầu tư góp vốn vào đơn vị khác,chart228,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2288,2288,Đầu tư khác,chart228,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart22881,22881,Đầu tư khác: ngắn hạn,chart2288,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart22882,22882,Đầu tư khác: dài hạn,chart2288,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart229,229,Dự phòng tổn thất tài sản,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2291,2291,Dự phòng giảm giá chứng khoán kinh doanh,chart229,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2292,2292,Dự phòng tổn thất đầu tư vào đơn vị khác,chart229,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2293,2293,Dự phòng phải thu khó đòi,chart229,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart22931,22931,Dự phòng phải thu khó đòi: ngắn hạn,chart2293,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart22932,22932,Dự phòng phải thu khó đòi: dài hạn,chart2293,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart2294,2294,Dự phòng giảm giá hàng tồn kho,chart229,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart22941,22941,Dự phòng giảm giá hàng tồn kho: ngắn hạn,chart2294,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart22942,22942,Dự phòng giảm giá hàng tồn kho: chi phí dở dang dài hạn,chart2294,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart22943,22943,"Dự phòng giảm giá hàng tồn kho: thiết bị, phụ tùng thay thế dài hạn",chart2294,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart241,241,Xây dựng cơ bản dở dang,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2411,2411,XDCB dở dang: Mua sắm TSCĐ,chart241,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2412,2412,XDCB dở dang: Xây dựng cơ bản,chart241,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2413,2413,XDCB dở dang: Sửa chữa lớn TSCĐ,chart241,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart242,242,Chi phí trả trước,,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2421,2421,Chi phí trả trước: ngắn hạn,chart242,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart24211,24211,Chi phí trả trước về thuê hoạt động TSCĐ,chart2421,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24212,24212,"Công cụ, dụng cụ xuất dùng",chart2421,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24213,24213,Chi phí đi vay,chart2421,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24214,24214,Chi phí thành lập doanh nghiệp,chart2421,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24215,24215,Chi phí mua bảo hiểm,chart2421,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24218,24218,Chi phí trả trước ngắn hạn khác,chart2421,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart2422,2422,Chi phí trả trước: dài hạn,chart242,2,0,1,asset_non_current,,l10n_vn.vn_template
+chart24221,24221,Chi phí trả trước về thuê hoạt động TSCĐ,chart2422,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24222,24222,"Công cụ, dụng cụ xuất dùng",chart2422,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24223,24223,Chi phí đi vay,chart2422,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24224,24224,Chi phí thành lập doanh nghiệp,chart2422,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24225,24225,Chi phí mua bảo hiểm,chart2422,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart24228,24228,Chi phí trả trước dài hạn khác,chart2422,3,0,0,asset_non_current,,l10n_vn.vn_template
+chart243,243,Tài sản thuế thu nhập hoãn lại,,1,0,0,asset_non_current,,l10n_vn.vn_template
+chart244,244,"Cầm cố, thế chấp, ký quỹ, ký cược",,1,0,1,asset_non_current,,l10n_vn.vn_template
+chart2441,2441,"Cầm cố, thế chấp, ký quỹ, ký cược: ngắn hạn",chart244,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart2442,2442,"Cầm cố, thế chấp, ký quỹ, ký cược: dài hạn",chart244,2,0,0,asset_non_current,,l10n_vn.vn_template
+chart331,331,Phải trả cho người bán,,1,1,1,liability_payable,1,l10n_vn.vn_template
+chart3311,3311,Phải trả ngắn hạn người bán,chart331,2,1,1,liability_payable,1,l10n_vn.vn_template
+chart33111,33111,Phải trả cho người bán: hoạt động SXKD,chart3311,3,1,0,liability_payable,1,l10n_vn.vn_template
+chart33112,33112,Phải trả ngắn hạn người bán: hoạt động đầu tư,chart3311,3,1,0,liability_payable,1,l10n_vn.vn_template
+chart33113,33113,Phải trả ngắn hạn người bán: hoạt động tài chính,chart3311,3,1,0,liability_payable,1,l10n_vn.vn_template
+chart3312,3312,Phải trả dài hạn người bán,chart331,2,1,1,liability_payable,1,l10n_vn.vn_template
+chart33121,33121,Phải trả dài hạn người bán: hoạt động SXKD,chart3312,3,1,0,liability_payable,1,l10n_vn.vn_template
+chart33122,33122,Phải trả dài hạn người bán: hoạt động đầu tư,chart3312,3,1,0,liability_payable,1,l10n_vn.vn_template
+chart33123,33123,Phải trả dài hạn người bán: hoạt động tài chính,chart3312,3,1,0,liability_payable,1,l10n_vn.vn_template
+chart333,333,Thuế và các khoản phải nộp Nhà nước,,1,0,1,liability_payable,1,l10n_vn.vn_template
+chart3331,3331,Thuế GTGT phải nộp,chart333,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33311,33311,Thuế GTGT phải nộp hàng trong nước,chart3331,3,0,1,liability_payable,1,l10n_vn.vn_template
+chart333111,333111,Thuế GTGT phải nộp hàng trong nước: HĐ SXKD,chart33311,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333112,333112,Thuế GTGT phải nộp hàng trong nước: HĐ đầu tư,chart33311,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333113,333113,Thuế GTGT phải nộp hàng trong nước: HĐ tài chính,chart33311,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart33312,33312,Thuế GTGT phải nộp hàng nhập khẩu,chart3331,3,0,1,liability_payable,1,l10n_vn.vn_template
+chart333121,333121,Thuế GTGT phải nộp hàng nhập khẩu: HĐ SXKD,chart33312,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333122,333122,Thuế GTGT phải nộp hàng nhập khẩu: HĐ đầu tư,chart33312,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333123,333123,Thuế GTGT phải nộp hàng nhập khẩu: HĐ tài chính,chart33312,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart33313,33313,"Thuế GTGT hàng bán bị trả lại, giảm giá hàng bán",chart3331,3,0,1,liability_payable,1,l10n_vn.vn_template
+chart333131,333131,"Thuế GTGT hàng bán bị trả lại, giảm giá hàng bán: HĐ SXKD",chart33313,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333132,333132,"Thuế GTGT hàng bán bị trả lại, giảm giá hàng bán: HĐ đầu tư",chart33313,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333133,333133,"Thuế GTGT hàng bán bị trả lại, giảm giá hàng bán: HĐ tài chính",chart33313,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart3332,3332,Thuế tiêu thụ đặc biệt,chart333,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3333,3333,"Thuế xuất, nhập khẩu",chart333,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33331,33331,Thuế xuất khẩu,chart3333,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33332,33332,Thuế nhập khẩu,chart3333,3,0,1,liability_payable,1,l10n_vn.vn_template
+chart333321,333321,Thuế nhập khẩu: HĐ SXKD,chart33332,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart333322,333322,Thuế nhập khẩu: HĐ đầu tư,chart33332,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart3334,3334,Thuế thu nhập doanh nghiệp,chart333,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3335,3335,Thuế thu nhập cá nhân,chart333,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3336,3336,Thuế tài nguyên,chart333,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3337,3337,"Thuế nhà đất, tiền thuê đất",chart333,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33371,33371,Thuế nhà đất,chart3337,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33372,33372,Tiền thuê đất,chart3337,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart3338,3338,Thuế bảo vệ môi trường và các loại thuế khác,chart333,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33381,33381,Thuế bảo vệ môi trường,chart3338,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33382,33382,Các loại thuế khác,chart3338,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart3339,3339,"Phí, lệ phí, các khoản phải nộp khác",chart333,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33391,33391,Các khoản phụ thu,chart3339,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33392,33392,"Các khoản phí, lệ phí",chart3339,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33398,33398,Các khoản phải nộp khác,chart3339,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart334,334,Phải trả người lao động,,1,0,1,liability_payable,1,l10n_vn.vn_template
+chart3341,3341,Phải trả công nhân viên,chart334,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3348,3348,Phải trả người lao động khác,chart334,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart335,335,Chi phí phải trả,,1,0,1,asset_prepayments,,l10n_vn.vn_template
+chart3351,3351,Chi phí phải trả: ngắn hạn,chart335,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart33511,33511,Chi phí phải trả:lãi vay,chart3351,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart33512,33512,Trích trước CP tiền lương trong thời gian nghỉ,chart3351,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart33513,33513,Chi phí trong thời gian ngừng kinh doanh,chart3351,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart33514,33514,"Chi phí trích trước tạm tính giá vốn hàng hóa, thành phẩm BĐS đã bán",chart3351,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart33518,33518,Chi phí phải trả khác,chart3351,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3352,3352,Chi phí phải trả: dài hạn,chart335,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart33521,33521,Chi phí phải trả:lãi vay,chart3352,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart33522,33522,Chi phí trong thời gian ngừng kinh doanh,chart3352,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart33528,33528,Chi phí phải trả khác,chart3352,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart336,336,Phải trả nội bộ,,1,0,1,liability_payable,1,l10n_vn.vn_template
+chart3361,3361,Phải trả nội bộ về vốn kinh doanh,chart336,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3362,3362,Phải trả nội bộ về chênh lệch tỷ giá,chart336,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33621,33621,Phải trả nội bộ về chênh lệch tỷ giá: ngắn hạn,chart3362,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33622,33622,Phải trả nội bộ về chênh lệch tỷ giá: dài hạn,chart3362,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart3363,3363,Phải trả nội bộ về chi phí đi vay đủ điều kiện được vốn hoá,chart336,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33631,33631,Phải trả nội bộ về chi phí đi vay đủ điều kiện được vốn hoá: ngắn hạn,chart3363,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33632,33632,Phải trả nội bộ về chi phí đi vay đủ điều kiện được vốn hoá: dài hạn,chart3363,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart3368,3368,Phải trả nội bộ khác,chart336,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33681,33681,Phải trả nội bộ khác: ngắn hạn,chart3368,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33682,33682,Phải trả nội bộ khác: dài hạn,chart3368,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart337,337,Thanh toán theo tiến độ kế hoạch HĐ xây dựng,,1,0,0,liability_payable,1,l10n_vn.vn_template
+chart338,338,"Phải trả, phải nộp khác",,1,0,1,liability_payable,1,l10n_vn.vn_template
+chart3381,3381,Tài sản thừa chờ giải quyết,chart338,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3382,3382,Kinh phí công đoàn,chart338,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3383,3383,Bảo hiểm xã hội,chart338,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3384,3384,Bảo hiểm y tế,chart338,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3385,3385,Phải trả về cổ phần hóa,chart338,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33851,33851,Phải trả về cổ phần hóa: ngắn hạn,chart3385,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart33852,33852,Phải trả về cổ phần hóa: dài hạn,chart3385,3,0,0,liability_payable,1,l10n_vn.vn_template
+chart3386,3386,Bảo hiểm thất nghiệp,chart338,2,0,0,liability_payable,1,l10n_vn.vn_template
+chart3387,3387,Doanh thu chưa thực hiện,chart338,2,0,1,liability_payable,1,l10n_vn.vn_template
+chart33871,33871,Doanh thu chưa thực hiện: ngắn hạn,chart3387,3,0,1,liability_payable,1,l10n_vn.vn_template
+chart338711,338711,Doanh thu ngắn hạn nhận trước,chart33871,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart338712,338712,Doanh thu ngắn hạn từ chương trình khách hàng truyền thống,chart33871,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart338718,338718,Các khoản doanh thu ngắn hạn chưa thực hiện khác,chart33871,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart33872,33872,Doanh thu chưa thực hiện: dài hạn,chart3387,3,0,1,liability_payable,1,l10n_vn.vn_template
+chart338721,338721,Doanh thu dài hạn nhận trước,chart33872,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart338722,338722,Doanh thu dài hạn từ chương trình khách hàng truyền thống,chart33872,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart338728,338728,Các khoản doanh thu dài hạn chưa thực hiện khác,chart33872,4,0,0,liability_payable,1,l10n_vn.vn_template
+chart3388,3388,"Phải trả, phải nộp khác",chart338,2,1,1,liability_payable,1,l10n_vn.vn_template
+chart33881,33881,"Phải trả, phải nộp ngắn hạn khác",chart3388,3,1,1,liability_payable,1,l10n_vn.vn_template
+chart338811,338811,"Phải trả, phải nộp khác: HĐ SXKD",chart33881,4,1,0,liability_payable,1,l10n_vn.vn_template
+chart338812,338812,"Phải trả, phải nộp ngắn hạn khác: HĐ đầu tư",chart33881,4,1,0,liability_payable,1,l10n_vn.vn_template
+chart338813,338813,"Phải trả, phải nộp ngắn hạn khác: HĐ tài chính",chart33881,4,1,0,liability_payable,1,l10n_vn.vn_template
+chart33882,33882,"Phải trả, phải nộp dài hạn khác",chart3388,3,1,1,liability_payable,1,l10n_vn.vn_template
+chart338821,338821,"Phải trả, phải nộp dài hạn khác: HĐSXKD",chart33882,4,1,0,liability_payable,1,l10n_vn.vn_template
+chart338822,338822,"Phải trả, phải nộp dài hạn khác: HĐ đầu tư",chart33882,4,1,0,liability_payable,1,l10n_vn.vn_template
+chart338823,338823,"Phải trả, phải nộp dài hạn khác: HĐ tài chính",chart33882,4,1,0,liability_payable,1,l10n_vn.vn_template
+chart341,341,Vay và nợ thuê tài chính,,1,0,1,asset_prepayments,,l10n_vn.vn_template
+chart3411,3411,Các khoản đi vay,chart341,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart34111,34111,Các khoản đi vay: ngắn hạn,chart3411,3,0,1,asset_prepayments,,l10n_vn.vn_template
+chart341111,341111,Các khoản đi vay ngắn hạn: tiền Việt Nam,chart34111,4,0,0,asset_prepayments,,l10n_vn.vn_template
+chart341112,341112,Các khoản đi vay ngắn hạn: ngoại tệ,chart34111,4,0,0,asset_prepayments,,l10n_vn.vn_template
+chart34112,34112,Các khoản đi vay: dài hạn,chart3411,3,0,1,asset_fixed,,l10n_vn.vn_template
+chart341121,341121,Các khoản đi vay dài hạn: tiền Việt Nam,chart34112,4,0,0,asset_fixed,,l10n_vn.vn_template
+chart341122,341122,Các khoản đi vay dài hạn: ngoại tệ,chart34112,4,0,0,asset_fixed,,l10n_vn.vn_template
+chart3412,3412,Nợ thuê tài chính,chart341,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart34121,34121,Nợ thuê tài chính: ngắn hạn,chart3412,3,0,1,asset_prepayments,,l10n_vn.vn_template
+chart341211,341211,Nợ thuê tài chính ngắn hạn: tiền Việt Nam,chart34121,4,0,0,asset_prepayments,,l10n_vn.vn_template
+chart341212,341212,Nợ thuê tài chính ngắn hạn: ngoại tệ,chart34121,4,0,0,asset_prepayments,,l10n_vn.vn_template
+chart34122,34122,Nợ thuê tài chính: dài hạn,chart3412,3,0,1,asset_fixed,,l10n_vn.vn_template
+chart341221,341221,Nợ thuê tài chính dài hạn: tiền Việt Nam,chart34122,4,0,0,asset_fixed,,l10n_vn.vn_template
+chart341222,341222,Nợ thuê tài chính dài hạn: ngoại tệ,chart34122,4,0,0,asset_fixed,,l10n_vn.vn_template
+chart343,343,Trái phiếu phát hành,,1,0,1,asset_fixed,,l10n_vn.vn_template
+chart3431,3431,Trái phiếu thường,chart343,2,0,1,asset_fixed,,l10n_vn.vn_template
+chart34311,34311,Mệnh giá trái phiếu,chart3431,3,0,1,asset_fixed,,l10n_vn.vn_template
+chart343111,343111,Mệnh giá trái phiếu: ngắn hạn,chart34311,4,0,0,asset_fixed,,l10n_vn.vn_template
+chart343112,343112,Mệnh giá trái phiếu: dài hạn,chart34311,4,0,0,asset_fixed,,l10n_vn.vn_template
+chart34312,34312,Chiết khấu trái phiếu,chart3431,3,0,0,asset_fixed,,l10n_vn.vn_template
+chart34313,34313,Phụ trội trái phiếu,chart3431,3,0,0,asset_fixed,,l10n_vn.vn_template
+chart3432,3432,Trái phiếu chuyển đổi,chart343,2,0,0,asset_fixed,,l10n_vn.vn_template
+chart344,344,"Nhận ký quỹ, ký cược",,1,0,1,asset_prepayments,,l10n_vn.vn_template
+chart3441,3441,"Nhận ký quỹ, ký cược: ngắn hạn",chart344,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3442,3442,"Nhận ký quỹ, ký cược: dài hạn",chart344,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart347,347,Thuế thu nhập hoãn lại phải trả,,1,0,0,asset_prepayments,,l10n_vn.vn_template
+chart352,352,Dự phòng phải trả,,1,0,1,asset_prepayments,,l10n_vn.vn_template
+chart3521,3521,Dự phòng bảo hành sản phẩm hàng hóa,chart352,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart35211,35211,Dự phòng bảo hành sản phẩm hàng hóa: ngắn hạn,chart3521,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart35212,35212,Dự phòng bảo hành sản phẩm hàng hóa: dài hạn,chart3521,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3522,3522,Dự phòng bảo hành công trình xây dựng,chart352,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart35221,35221,Dự phòng bảo hành công trình xây dựng: ngắn hạn,chart3522,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart35222,35222,Dự phòng bảo hành công trình xây dựng: dài hạn,chart3522,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3523,3523,Dự phòng tái cơ cấu doanh nghiệp,chart352,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart35231,35231,Dự phòng tái cơ cấu doanh nghiệp: ngắn hạn,chart3523,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart35232,35232,Dự phòng tái cơ cấu doanh nghiệp: dài hạn,chart3523,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3524,3524,Dự phòng phải trả khác,chart352,2,0,1,asset_prepayments,,l10n_vn.vn_template
+chart35241,35241,Dự phòng phải trả khác: ngắn hạn,chart3524,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart35242,35242,Dự phòng phải trả khác: dài hạn,chart3524,3,0,0,asset_prepayments,,l10n_vn.vn_template
+chart353,353,"Quỹ khen thưởng, phúc lợi",,1,0,1,asset_prepayments,,l10n_vn.vn_template
+chart3531,3531,Quỹ khen thưởng,chart353,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3532,3532,Quỹ phúc lợi,chart353,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3533,3533,Quỹ phúc lợi đã hình thành TSCĐ,chart353,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3534,3534,Quỹ thưởng ban quản lý điều hành công ty,chart353,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart356,356,Quỹ phát triển khoa học và công nghệ,,1,0,1,asset_prepayments,,l10n_vn.vn_template
+chart3561,3561,Quỹ phát triển khoa học và công nghệ,chart356,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart3562,3562,Quỹ phát triển khoa học và công nghệ đã hình thành TSCĐ,chart356,2,0,0,asset_prepayments,,l10n_vn.vn_template
+chart357,357,Quỹ bình ổn giá,,1,0,0,asset_prepayments,,l10n_vn.vn_template
+chart411,411,Vốn đầu tư của chủ sở hữu,,1,0,1,equity,,l10n_vn.vn_template
+chart4111,4111,Vốn góp của chủ sở hữu,chart411,2,0,1,equity,,l10n_vn.vn_template
+chart41111,41111,Cổ phiếu phổ thông có quyền biểu quyết,chart4111,3,0,1,equity,,l10n_vn.vn_template
+chart411111,411111,Vốn góp của công ty mẹ,chart41111,4,0,0,equity,,l10n_vn.vn_template
+chart411112,411112,Vốn góp của các đối tượng khác,chart41111,4,0,0,equity,,l10n_vn.vn_template
+chart41112,41112,Cổ phiếu ưu đãi,chart4111,3,0,1,equity,,l10n_vn.vn_template
+chart411121,411121,Cổ phiếu ưu đãi: vốn góp,chart41112,4,0,0,equity,,l10n_vn.vn_template
+chart411122,411122,Cổ phiếu ưu đãi: nợ phải trả,chart41112,4,0,0,equity,,l10n_vn.vn_template
+chart4112,4112,Thặng dư vốn cổ phần,chart411,2,0,0,equity,,l10n_vn.vn_template
+chart4113,4113,Quyền chọn chuyển đổi trái phiếu,chart411,2,0,0,equity,,l10n_vn.vn_template
+chart4118,4118,Vốn khác,chart411,2,0,0,equity,,l10n_vn.vn_template
+chart412,412,Chênh lệch đánh giá lại tài sản,,1,0,0,equity,,l10n_vn.vn_template
+chart413,413,Chênh lệch tỷ giá,,1,0,1,equity,,l10n_vn.vn_template
+chart4131,4131,Chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ,chart413,2,0,0,equity,,l10n_vn.vn_template
+chart4132,4132,Chênh lệch tỷ giá hối đoái trong giai đoạn trước hoạt động,chart413,2,0,0,equity,,l10n_vn.vn_template
+chart414,414,Quỹ đầu tư phát triển,,1,0,0,equity,,l10n_vn.vn_template
+chart417,417,Quỹ hỗ trợ sắp xếp doanh nghiệp,,1,0,0,equity,,l10n_vn.vn_template
+chart418,418,Các quỹ khác thuộc vốn chủ sở hữu,,1,0,0,equity,,l10n_vn.vn_template
+chart419,419,Cổ phiếu ngân quỹ,,1,0,0,equity,,l10n_vn.vn_template
+chart421,421,Lợi nhuận sau thuế chưa phân phối,,1,0,1,equity,,l10n_vn.vn_template
+chart4211,4211,Lợi nhuận sau thuế chưa phân phối năm trước,chart421,2,0,0,equity,,l10n_vn.vn_template
+chart4212,4212,Lợi nhuận sau thuế chưa phân phối năm nay,chart421,2,0,0,equity,,l10n_vn.vn_template
+chart441,441,Nguồn vốn đầu tư XDCB,,1,0,1,equity,,l10n_vn.vn_template
+chart4411,4411,Vốn ngân sách,chart441,2,0,0,equity,,l10n_vn.vn_template
+chart4412,4412,Vốn tự có,chart441,2,0,0,equity,,l10n_vn.vn_template
+chart461,461,Nguồn kinh phí sự nghiệp,,1,0,1,equity,,l10n_vn.vn_template
+chart4611,4611,Nguồn KP sự nghiệp: Năm trước,chart461,2,0,0,equity,,l10n_vn.vn_template
+chart4612,4612,Nguồn KP sự nghiệp: Năm nay,chart461,2,0,0,equity,,l10n_vn.vn_template
+chart466,466,Nguồn kinh phí đã hình thành TSCĐ,,1,0,0,equity,,l10n_vn.vn_template
+chart511,511,Doanh thu bán hàng và cung cấp dịch vụ,,1,0,1,income,,l10n_vn.vn_template
+chart5111,5111,Doanh thu bán hàng hóa,chart511,2,0,1,income,,l10n_vn.vn_template
+chart51111,51111,Doanh thu bán hàng hóa: bên ngoài,chart5111,3,0,0,income,,l10n_vn.vn_template
+chart51112,51112,Doanh thu bán hàng hóa: nội bộ,chart5111,3,0,0,income,,l10n_vn.vn_template
+chart5112,5112,Doanh thu bán các thành phẩm,chart511,2,0,1,income,,l10n_vn.vn_template
+chart51121,51121,Doanh thu bán các thành phẩm: bên ngoài,chart5112,3,0,0,income,,l10n_vn.vn_template
+chart51122,51122,Doanh thu bán các thành phẩm: nội bộ,chart5112,3,0,0,income,,l10n_vn.vn_template
+chart5113,5113,Doanh thu cung cấp dịch vụ,chart511,2,0,1,income,,l10n_vn.vn_template
+chart51131,51131,Doanh thu cung cấp dịch vụ: bên ngoài,chart5113,3,0,0,income,,l10n_vn.vn_template
+chart51132,51132,Doanh thu cung cấp dịch vụ: nội bộ,chart5113,3,0,0,income,,l10n_vn.vn_template
+chart5114,5114,"Doanh thu trợ cấp, trợ giá",chart511,2,0,0,income,,l10n_vn.vn_template
+chart5117,5117,Doanh thu kinh doanh bất động sản đầu tư,chart511,2,0,0,income,,l10n_vn.vn_template
+chart5118,5118,Doanh thu khác,chart511,2,0,1,income,,l10n_vn.vn_template
+chart51181,51181,Doanh thu khác: bên ngoài,chart5118,3,0,0,income,,l10n_vn.vn_template
+chart51182,51182,Doanh thu khác: nội bộ,chart5118,3,0,0,income,,l10n_vn.vn_template
+chart515,515,Doanh thu hoạt động tài chính,,1,0,1,income,,l10n_vn.vn_template
+chart5151,5151,"Lãi tiền cho vay, tiền gởi",chart515,2,0,0,income,,l10n_vn.vn_template
+chart5152,5152,Chênh lệch lãi tỷ giá phát sinh trong kỳ,chart515,2,0,0,income,,l10n_vn.vn_template
+chart5153,5153,Cổ tức và lợi nhuận được chia,chart515,2,0,0,income,,l10n_vn.vn_template
+chart5154,5154,Lãi do bán các loại chứng khoán,chart515,2,0,0,income,,l10n_vn.vn_template
+chart5155,5155,Lãi bán ngoại tệ,chart515,2,0,0,income,,l10n_vn.vn_template
+chart5156,5156,Lãi bán hàng trả chậm,chart515,2,0,0,income,,l10n_vn.vn_template
+chart5157,5157,Chiết khấu thanh toán được hưởng,chart515,2,0,0,income,,l10n_vn.vn_template
+chart5158,5158,Lãi chênh lệch tỷ giá do đánh giá lại,chart515,2,0,0,income,,l10n_vn.vn_template
+chart521,521,Các khoản giảm trừ doanh thu,,1,0,1,income,,l10n_vn.vn_template
+chart5211,5211,Chiết khấu thương mại,chart521,2,0,1,income,,l10n_vn.vn_template
+chart52111,52111,Chiết khấu thương mại: hàng hoá,chart5211,3,0,0,income,,l10n_vn.vn_template
+chart52112,52112,Chiết khấu thương mại: thành phẩm,chart5211,3,0,0,income,,l10n_vn.vn_template
+chart52113,52113,Chiết khấu thương mại: dịch vụ,chart5211,3,0,0,income,,l10n_vn.vn_template
+chart5212,5212,Giảm giá hàng bán,chart521,2,0,1,income,,l10n_vn.vn_template
+chart52121,52121,Giảm giá hàng bán: hàng hoá,chart5212,3,0,0,income,,l10n_vn.vn_template
+chart52122,52122,Giảm giá hàng bán: thành phẩm,chart5212,3,0,0,income,,l10n_vn.vn_template
+chart52123,52123,Giảm giá hàng bán: dịch vụ,chart5212,3,0,0,income,,l10n_vn.vn_template
+chart5213,5213,Hàng bán bị trả lại,chart521,2,0,1,income,,l10n_vn.vn_template
+chart52131,52131,Hàng bán bị trả lại: hàng hóa,chart5213,3,0,0,income,,l10n_vn.vn_template
+chart52132,52132,Hàng bán bị trả lại: thành phẩm,chart5213,3,0,0,income,,l10n_vn.vn_template
+chart52133,52133,Hàng bán bị trả lại: dịch vụ,chart5213,3,0,0,income,,l10n_vn.vn_template
+chart611,611,Mua hàng,,1,0,1,expense,,l10n_vn.vn_template
+chart6111,6111,Mua nguyên vật liệu,chart611,2,0,0,expense,,l10n_vn.vn_template
+chart6112,6112,Mua hàng hóa,chart611,2,0,0,expense,,l10n_vn.vn_template
+chart621,621,Chi phí NVL trực tiếp,,1,0,0,expense,,l10n_vn.vn_template
+chart622,622,Chi phí nhân công trực tiếp,,1,0,0,expense,,l10n_vn.vn_template
+chart623,623,Chi phí sử dụng máy thi công,,1,0,1,expense,,l10n_vn.vn_template
+chart6231,6231,Chi phí nhân công,chart623,2,0,0,expense,,l10n_vn.vn_template
+chart6232,6232,Chi phí vật liệu,chart623,2,0,0,expense,,l10n_vn.vn_template
+chart6233,6233,Chi phí dụng cụ sản xuất,chart623,2,0,0,expense,,l10n_vn.vn_template
+chart6234,6234,Chi phí khấu hao máy thi công,chart623,2,0,0,expense,,l10n_vn.vn_template
+chart6237,6237,Chi phí dịch vụ mua ngoài,chart623,2,0,0,expense,,l10n_vn.vn_template
+chart6238,6238,Chi phí khác bằng tiền,chart623,2,0,0,expense,,l10n_vn.vn_template
+chart627,627,Chi phí sản xuất chung,,1,0,1,expense,,l10n_vn.vn_template
+chart6271,6271,Chi phí nhân viên phân xưởng,chart627,2,0,0,expense,,l10n_vn.vn_template
+chart6272,6272,Chi phí vật liệu,chart627,2,0,0,expense,,l10n_vn.vn_template
+chart6273,6273,Chi phí dụng cụ sản xuất,chart627,2,0,0,expense,,l10n_vn.vn_template
+chart6274,6274,Chi phí khấu hao TSCĐ,chart627,2,0,0,expense,,l10n_vn.vn_template
+chart6277,6277,Chi phí dịch vụ mua ngoài,chart627,2,0,0,expense,,l10n_vn.vn_template
+chart6278,6278,Chi phí bằng tiền khác,chart627,2,0,0,expense,,l10n_vn.vn_template
+chart631,631,Giá thành sản xuất,,1,0,0,expense,,l10n_vn.vn_template
+chart632,632,Giá vốn hàng bán,,1,0,1,expense_direct_cost,,l10n_vn.vn_template
+chart6321,6321,"Giá vốn hàng bán: hàng hoá, thành phẩm, dịch vụ",chart632,2,0,1,expense_direct_cost,,l10n_vn.vn_template
+chart63211,63211,Giá vốn hàng bán: hàng hoá,chart6321,3,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart63212,63212,Giá vốn hàng bán: thành phẩm,chart6321,3,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart63213,63213,Giá vốn hàng bán: dịch vụ,chart6321,3,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart63218,63218,Giá vốn hàng bán: khác,chart6321,3,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart6322,6322,Giá vốn và chi phí l.quan đến BĐS đầu tư,chart632,2,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart6323,6323,"Giá trị còn lại, chi phí nhượng bán, thanh lý của BĐS đầu tư",chart632,2,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart6324,6324,Giá trị hàng tồn kho mất mát trong kỳ,chart632,2,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart6325,6325,Các khoản chi phí vượt mức bình thường khác được tính trực tiếp vào giá vốn,chart632,2,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart6326,6326,Dự phòng giảm giá hàng tồn kho,chart632,2,0,0,expense_direct_cost,,l10n_vn.vn_template
+chart635,635,Chi phí tài chính,,1,0,1,expense,,l10n_vn.vn_template
+chart6351,6351,Chênh lệch lỗ tỷ giá phát sinh trong kỳ,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6352,6352,Chi phí lãi vay,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6353,6353,Lỗ chênh lệch tỷ giá do đánh giá lại,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6354,6354,Lỗ do bán các loại chứng khoán,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6355,6355,Chiết khấu thanh toán cho người mua,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6356,6356,Lãi mua hàng trả chậm,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6357,6357,Dự phòng giảm giá chứng khoán kinh doanh và tổn thất đầu tư,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart6358,6358,Chi phí tài chính khác,chart635,2,0,0,expense,,l10n_vn.vn_template
+chart641,641,Chi phí bán hàng,,1,0,1,expense,,l10n_vn.vn_template
+chart6411,6411,Chi phí nhân viên,chart641,2,0,0,expense,,l10n_vn.vn_template
+chart6412,6412,"Chi phí vật liệu, bao bì",chart641,2,0,0,expense,,l10n_vn.vn_template
+chart6413,6413,"Chi phí dụng cụ, đồ dùng",chart641,2,0,0,expense,,l10n_vn.vn_template
+chart6414,6414,Chi phí khấu hao TSCĐ,chart641,2,0,0,expense,,l10n_vn.vn_template
+chart6415,6415,Chi phí bảo hành,chart641,2,0,0,expense,,l10n_vn.vn_template
+chart6417,6417,Chi phí dịch vụ mua ngoài,chart641,2,0,0,expense,,l10n_vn.vn_template
+chart6418,6418,Chi phí bằng tiền khác,chart641,2,0,0,expense,,l10n_vn.vn_template
+chart642,642,Chi phí quản lý doanh nghiệp,,1,0,1,expense,,l10n_vn.vn_template
+chart6421,6421,Chi phí nhân viên quản lý,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6422,6422,Chi phí vật liệu quản lý,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6423,6423,Chi phí đồ dùng văn phòng,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6424,6424,Chi phí khấu hao TSCĐ,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6425,6425,"Thuế, phí và lệ phí",chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6426,6426,Chi phí dự phòng,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6427,6427,Chi phí dịch vụ mua ngoài,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart6428,6428,Chi phí bằng tiền khác,chart642,2,0,0,expense,,l10n_vn.vn_template
+chart711,711,Thu nhập khác,,1,0,1,income,,l10n_vn.vn_template
+chart7111,7111,"Thu nhập khác: được thưởng, bồi thường",chart711,2,0,0,income,,l10n_vn.vn_template
+chart7112,7112,"Thu nhập khác: thanh lý, nhượng bán TSCĐ",chart711,2,0,0,income,,l10n_vn.vn_template
+chart7113,7113,Lãi do đánh giá lại tài sản,chart711,2,0,0,income,,l10n_vn.vn_template
+chart7114,7114,Thuế được giảm,chart711,2,0,0,income,,l10n_vn.vn_template
+chart7118,7118,Thu nhập khác,chart711,2,0,0,income,,l10n_vn.vn_template
+chart811,811,Chi phí khác,,1,0,1,expense,,l10n_vn.vn_template
+chart8111,8111,"Chi phí khác: bồi thường, bị phạt và CP khác",chart811,2,0,0,expense,,l10n_vn.vn_template
+chart8112,8112,"Chi phí khác: thanh lý, nhượng bán TSCĐ",chart811,2,0,0,expense,,l10n_vn.vn_template
+chart8113,8113,Lỗ do đánh giá lại tài sản;,chart811,2,0,0,expense,,l10n_vn.vn_template
+chart8118,8118,Chi phí khác,chart811,2,0,0,expense,,l10n_vn.vn_template
+chart821,821,Chi phí thuế thu nhập doanh nghiệp,,1,0,1,expense,,l10n_vn.vn_template
+chart8211,8211,Chi phí thuế TNDN hiện hành,chart821,2,0,0,expense,,l10n_vn.vn_template
+chart8212,8212,Chi phí thuế TNDN hoãn lại,chart821,2,0,0,expense,,l10n_vn.vn_template
+chart911,911,Xác định kết quả kinh doanh,,1,0,0,equity_unaffected,,l10n_vn.vn_template
+chartN001,N001,Tài sản thuê ngoài,,1,0,0,off_balance,,l10n_vn.vn_template
+chartN002,N002,"Vật tư, hàng hóa giữ hộ, nhận gia công",,1,0,0,off_balance,,l10n_vn.vn_template
+chartN003,N003,"Hàng hóa nhận bán hộ, nhận ký gửi, ký cược",,1,0,0,off_balance,,l10n_vn.vn_template
+chartN004,N004,Nợ khó đòi đã xử lý,,1,0,0,off_balance,,l10n_vn.vn_template
+chartN007,N007,Ngoại tệ các loại,,1,0,0,off_balance,,l10n_vn.vn_template
+chartN008,N008,"Dự toán chi sự nghiệp, dự án",,1,0,0,off_balance,,l10n_vn.vn_template

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="act_accounting_tree_view" model="ir.ui.view">
+        <field name="name">act_accounting_tree_view</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="replace">
+                <tree editable="top" create="1" delete="1" multi_edit="1">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="short_name"/>
+                    <field name="parent_id"/>
+                    <field name="level"/>
+                    <field name="is_debt_account"/>
+                    <field name="is_general_account" readonly="True"/>
+                    <field name="account_type"/>
+                    <field name="reconcile"/>
+                    <button name="action_read_account" type="object" string="Thiết lập" class="float-right btn-secondary"/>
+                </tree>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="act_accounting_search_view" model="ir.ui.view">
+        <field name="name">act.accounting.search</field>
+        <field name="model">account.account</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="account_type"/>
+                <field name="parent_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="act_accounting_form_view" model="ir.ui.view">
+        <field name="name">act.accounting.form</field>
+        <field name="model">account.account</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code" required="1"/>
+                            <field name="name" required="1"/>
+                            <field name="short_name"/>
+                            <field name="account_type" required="1"/>
+                            <field name="is_debt_account"/>
+                            <field name="is_general_account" readonly="True"/>
+                            <field name="parent_id"/>
+                            <field name="tag_ids" widget="many2many_tags"/>
+                            <field name="allowed_journal_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                            <field name="currency_id"/>
+                            <field name="reconcile"/>
+                            <field name="level" readonly="True"/>
+                            <field name="company_id"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+<!--                    <field name="activity_ids"/>-->
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="account.action_account_form">
+        <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('eco_accounting.act_accounting_tree_view')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('eco_accounting.act_accounting_form_view')}),
+                ]"/>
+    </record>
+
+<!--    <record id="action_act_accounting" model="ir.actions.act_window">-->
+<!--        <field name="name">Hệ thống tài khoản</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="res_model">account.account</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="target">current</field>-->
+<!--    </record>-->
+</odoo>

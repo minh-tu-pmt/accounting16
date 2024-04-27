@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="item_fee_tree">
+            <field name="name">item.fee.tree</field>
+            <field name="model">item.fee</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="fee_group_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="item_fee_form">
+            <field name="name">item.fee.form</field>
+            <field name="model">item.fee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="fee_group_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fee_item_search_view" model="ir.ui.view">
+        <field name="name">fee_item_search_view</field>
+        <field name="model">item.fee</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="code"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+        <record model="ir.actions.act_window" id="action_item_group">
+            <field name="name">Khoản mục chi phí</field>
+            <field name="res_model">item.fee</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  No record found
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

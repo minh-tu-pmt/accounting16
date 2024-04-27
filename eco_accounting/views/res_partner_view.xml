@@ -1,0 +1,20 @@
+<odoo>
+    <record id="res_partner_view_form_act_account" model="ir.ui.view">
+        <field name="name">res.partner.view.form.act.account</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='property_account_receivable_id']" position="attributes">
+                <attribute name="domain">[('is_general_account', '=', False)]</attribute>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="replace">
+                <label for="vat" placeholder="e.g. BE0477472701" attrs="{'readonly': [('parent_id','!=',False)]}"/>
+                <div class="o_row" placeholder="e.g. BE0477472701" attrs="{'readonly': [('parent_id','!=',False)]}">
+                    <field name="vat"/>
+                    <button type="object" name="click_mst" class="btn-sm btn-link mb4 fa fa-eye" aria-label="Tìm kiếm mã số thuế"
+                            title="Tìm kiếm mã số thuế"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

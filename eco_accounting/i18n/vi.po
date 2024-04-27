@@ -1,0 +1,1655 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* act_accounting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-10 09:52+0000\n"
+"PO-Revision-Date: 2024-04-10 09:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.res_config_settings_view_form_act_account
+msgid "<b>Cập nhật dữ liệu</b>"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+msgid ""
+"<span class=\"oe_inline o_form_label mr-3 ml-5 oe_edit_only\" groups=\"base.group_multi_currency\">in\n"
+"                                </span>"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+msgid ""
+"<span class=\"oe_inline o_form_label mx-3 oe_read_only\" groups=\"base.group_multi_currency\">in\n"
+"                                </span>"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+msgid "<span>Bút toán</span>"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic_cashout
+msgid "<span>Thanh toán</span>"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_account_account
+msgid "Account"
+msgstr "Tài khoản"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__account_bank_id
+msgid "Account Bank"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_account__group_id
+msgid "Account prefixes can determine account groups."
+msgstr "Tiền tố tài khoản có thể xác định nhóm tài khoản."
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.res_config_settings_view_form_act_account
+msgid "Act ACCOUNT"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_needaction
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_needaction
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__active
+msgid "Active"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_exception_decoration
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_exception_decoration
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_state
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_state
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_type_icon
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_type_icon
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__allowed_compare
+msgid "Allowed Compare"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_attachment_count
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_attachment_count
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__form_of_allocation__auto
+msgid "Auto"
+msgstr "Tự động"
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__type_journal__bank
+msgid "Bank"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/account_synthetic.py:0
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__move_id
+#, python-format
+msgid "Bút toán"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/act_advance.py:0
+#, python-format
+msgid "Bạn không phải người được phân công"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/act_indenture.py:0
+#, python-format
+msgid "Bạn không thể xóa khế ước này"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/act_accounting.py:0
+#, python-format
+msgid "Bạn không thể xóa tài khoản này"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/res_partner.py:0
+#, python-format
+msgid "Bạn phải nhập mã số thuế"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__level
+msgid "Bậc tài khoản"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+#: model_terms:ir.ui.view,arch_db:act_accounting.view_account_payment_register_form_extend
+msgid "Cancel"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+msgid "Cancel Entry"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__type_journal__cash
+msgid "Cash"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_move_line__check_curr
+msgid "Check Curr"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__check_currency
+msgid "Check Currency"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__detail_account_payment_invoice_ids
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__detail_account_payment_partner_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__act_advance_detail_ids
+msgid "Chi tiết"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+msgid "Chi tiết theo hóa đơn"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+msgid "Chi tiết theo khách hàng"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Chi tiết tạm ứng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_indenture__type_inden__loan
+msgid "Cho vay"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__method__transfer
+msgid "Chuyển khoản"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__chosing
+msgid "Chọn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__state__wait
+msgid "Chờ duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__person_position
+msgid "Chức vụ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__code
+msgid "Code"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__company_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__company_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__company_id
+msgid "Company"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_res_config_settings
+msgid "Config Settings"
+msgstr "Thiết lập cấu hình"
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__state__confirm
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic_cashout
+msgid "Confirm"
+msgstr "xác nhận"
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_res_partner
+msgid "Contact"
+msgstr "Danh bạ"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__count_move
+msgid "Count Move"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__count_paymnet
+msgid "Count Paymnet"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.view_account_payment_register_form_extend
+msgid "Create Payment"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__create_uid
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__create_date
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_res_currency
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__amount_redisual
+msgid "Còn phải thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.res_config_settings_view_form_act_account
+msgid "Cập nhật kế toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.ui.menu,name:act_accounting.menu_act_accouting_cate_lv2
+msgid "Danh mục"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__indenture_id
+#: model:ir.ui.menu,name:act_accounting.menu_action_inden
+msgid "Danh mục khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__display_name
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__description_setle
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__description_setle
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__description_setle
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__description
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__description
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__description
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__ref
+#: model_terms:ir.ui.view,arch_db:act_accounting.move_all_view_inherit
+#: model_terms:ir.ui.view,arch_db:act_accounting.move_form_inherit
+msgid "Diễn giải"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__state__draft
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__state__draft
+msgid "Dự thảo"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__payment_type_detail__follow_detail_invoice
+msgid "Follow Details Invoice"
+msgstr "Thanh toán chi tiết theo hóa đơn"
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__payment_type_detail__follow_partner
+msgid "Follow Partner"
+msgstr "Thanh toán thường theo đối tác"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_follower_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_follower_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_partner_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_partner_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__activity_type_icon
+#: model:ir.model.fields,help:act_accounting.field_act_advance__activity_type_icon
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__vat_gtgt__move_group__for_project
+msgid "For Project"
+msgstr "Dùng cho dự án"
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_account__currency_id
+msgid "Forces all moves for this account to have this account currency."
+msgstr ""
+"Buộc tất cả giao dịch của tài khoản này phải sử dụng tiền tệ của tài khoản."
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__value
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__value
+msgid "Giá trị"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__foreign_currency_vl
+msgid "Giá trị ngoại tệ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__base_value
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__base_value
+msgid "Giá trị nguyên tệ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__value
+msgid "Giá trị thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.ui.menu,name:act_accounting.invoic_bank_in_menu
+msgid "Giấy báo có"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Gửi duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__has_message
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__has_message
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__method
+msgid "Hình thức"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__form_of_allocation
+msgid "Hình thức phân bổ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__move_id
+msgid "Hóa đơn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__end_payment
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__end_payment
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__end_payment
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__end_date
+msgid "Hạn thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Hủy"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__id
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__id
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__id
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__id
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__id
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post__id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__id
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__id
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__id
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__id
+msgid "ID"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_exception_icon
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_exception_icon
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__activity_exception_icon
+#: model:ir.model.fields,help:act_accounting.field_act_advance__activity_exception_icon
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_needaction
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_unread
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_needaction
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_unread
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_needaction
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_has_error
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_has_sms_error
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_has_error
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_has_sms_error
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_has_error
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__vat_gtgt__move_group__invoice_normal
+msgid "Invoice Normal"
+msgstr "Hóa đơn thường"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__is_debt_account
+msgid "Is Debt Account"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_is_follower
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_is_follower
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__is_general_account
+msgid "Is General Account"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_account_journal
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__journal_id
+msgid "Journal"
+msgstr "Sổ nhật ký"
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_account_move
+msgid "Journal Entry"
+msgstr "Bút toán sổ nhật ký"
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_account_move_line
+msgid "Journal Item"
+msgstr "Bút toán"
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_item_group
+#: model:ir.model.fields,field_description:act_accounting.field_account_move_line__item_fee_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__item_fee_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__fee_group_id
+#: model:ir.ui.menu,name:act_accounting.menu_item_group
+msgid "Khoản mục chi phí"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__partner_id
+msgid "Khách hàng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_indenture__state__non_active
+msgid "Không sử dụng"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/act_advance.py:0
+#, python-format
+msgid "Không thể xóa trạng thái khác dự thảo"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/act_accounting.py:0
+#, python-format
+msgid ""
+"Không tạo được tài khoản do tài khoản mẹ của nó đã có bút toán phát sinh!"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_act_indenture
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__act_indenture_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__act_indenture_id
+msgid "Khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__check_user_approval
+msgid "Kiểm tra"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__sign
+msgid "Kí hiệu"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.view_account_payment_register_form_extend
+msgid "Label"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_act_account____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee____last_update
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__write_uid
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_api_accouting_post__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__write_date
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__level
+msgid "Level"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__type_inden
+msgid "Loại khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__payment_type_detail
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__fee_th
+msgid "Loại thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__act_performent_ids
+msgid "Lãi suất"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__core_performance
+msgid "Lãi suất (%)"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_main_attachment_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_main_attachment_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__form_of_allocation__manual
+msgid "Manual"
+msgstr "Thủ công"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_has_error
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_has_error
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__move_ids
+msgid "Move"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__my_activity_date_deadline
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__my_activity_date_deadline
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/act_indenture.py:0
+#, python-format
+msgid "Mã không phép trùng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_move_line__indenture_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__code_inden
+msgid "Mã khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__code
+msgid "Mã nhóm"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__code
+msgid "Mã phí"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__tax_code
+msgid "Mã số thuế"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__parent_id
+msgid "Mẹ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__currency_id
+msgid "Mệnh giá"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__name
+msgid "Name"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_date_deadline
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_date_deadline
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_summary
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_summary
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_type_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_type_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__origin
+msgid "Nguồn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_performent__date_active
+msgid "Ngày hiệu lực"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__invoice_date
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__invoice_date
+msgid "Ngày hóa đơn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__date_inden
+msgid "Ngày khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__date
+msgid "Ngày kế toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__date_pay
+msgid "Ngày thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__date_br_loan
+msgid "Ngày vay / cho vay"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__end_inden
+msgid "Ngày đáo hạn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__date_request
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__date_request
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__date_request
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__date_sugges
+msgid "Ngày đề nghị"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.ui.menu,name:act_accounting.menu_bank_accounting
+msgid "Ngân hàng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__receiver
+msgid "Người nhận tiền"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__person_push
+msgid "Người nộp tiền"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__per_approve_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__per_approve_id
+msgid "Người phê duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__person_sugges_id
+msgid "Người đề nghị"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__vendor
+msgid "Nhà cung cấp"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__partner_setment_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__partner_setment_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__partner_setment_id
+msgid "Nhân viên"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__group_id
+msgid "Nhóm"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__fee_group_id
+msgid "Nhóm Phí"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__move_group
+msgid "Nhóm hóa đơn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_fee_group
+#: model:ir.ui.menu,name:act_accounting.menu_fee_group
+msgid "Nhóm phí"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_move_line__group_clause
+msgid "Nhóm định khoản"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.actions.act_window,help:act_accounting.action_fee_group
+#: model_terms:ir.actions.act_window,help:act_accounting.action_item_group
+#: model_terms:ir.actions.act_window,help:act_accounting.action_open_move_all
+#: model_terms:ir.actions.act_window,help:act_accounting.action_open_payment_cashin
+#: model_terms:ir.actions.act_window,help:act_accounting.action_open_payment_cashout
+#: model_terms:ir.actions.act_window,help:act_accounting.action_open_payment_settlement
+msgid "No record found"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__vat_gtgt__move_group__not_invoice
+msgid "Not Invoice"
+msgstr "Không có hóa đơn"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__note
+msgid "Note"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_needaction_counter
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_needaction_counter
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_has_error_counter
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_has_error_counter
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_needaction_counter
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_needaction_counter
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_has_error_counter
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_has_error_counter
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__message_unread_counter
+#: model:ir.model.fields,help:act_accounting.field_act_advance__message_unread_counter
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__content
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__content
+msgid "Nội dung"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__description
+msgid "Nội dung giao dịch"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/wizard/account_payment_register.py:0
+#: model:ir.model,name:act_accounting.model_account_payment
+#, python-format
+msgid "Payments"
+msgstr "Thanh toán"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__synthetic_id
+msgid "Phiếu"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__synthetic_id
+msgid "Phiếu Chi"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_open_payment_cashout
+#: model:ir.ui.menu,name:act_accounting.invoice_cash_out_menu
+msgid "Phiếu chi tiền mặt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_open_move_all
+msgid "Phiếu kế toán tổng hợp"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_open_payment_cashin
+#: model:ir.ui.menu,name:act_accounting.invoice_cash_in_menu
+msgid "Phiếu thu tiền mặt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__act_advance_ids
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__act_advance_ids
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__act_advance_ids
+msgid "Phiếu đề nghị"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Phê duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__detail_acccount_payment_expenditure__fee_th__fee_outside
+msgid "Phí ngoài"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__detail_acccount_payment_expenditure__fee_th__fee_inside
+msgid "Phí trong"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_move_line__department_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__department
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__department_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__department_id
+msgid "Phòng ban"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+msgid "Post"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.view_account_payment_register_form_extend
+msgid "Post Difference In"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__state__posted
+msgid "Posted"
+msgstr "Đã vào sổ"
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__vat_gtgt__move_group__private_use
+msgid "Private"
+msgstr "Dùng riêng cho SXKD"
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Quyết toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_open_payment_settlement
+#: model:ir.ui.menu,name:act_accounting.menu_action_settlement
+msgid "Quyết toán tạm ứng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__type_pay__inbound
+msgid "Receive"
+msgstr "Nhận"
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/account_synthetic.py:0
+#: model:ir.model,name:act_accounting.model_account_payment_register
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic_cashout
+#: model_terms:ir.ui.view,arch_db:act_accounting.view_account_payment_register_form_extend
+#, python-format
+msgid "Register Payment"
+msgstr "Ghi nhận thanh toán"
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__activity_user_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__activity_user_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_has_sms_error
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_has_sms_error
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__account_synthetic__type_pay__outbound
+msgid "Send"
+msgstr "Gửi"
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__vat_gtgt__move_group__shared
+msgid "Shared"
+msgstr "Dùng chung cho SXKD"
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__state
+msgid "Status"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__activity_state
+#: model:ir.model.fields,help:act_accounting.field_act_advance__activity_state
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__synthetic_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__synthetic_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__synthetic_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment_register__synthetic_id
+msgid "Synthetic"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__num_adsettlement
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__num_adsettlement
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__num_adsettlement
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__name
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__code_advance
+msgid "Số chứng từ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__invoice_number
+msgid "Số hóa đơn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__num_inden
+msgid "Số khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__money_approve
+msgid "Số tiền được duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__money_sugges
+msgid "Số tiền đề nghị"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__num_account
+msgid "Số tài khoản"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_indenture__state__active
+msgid "Sử dụng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__is_detail_account
+msgid "TK chi tiết"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__is_debt_account
+msgid "TK công nợ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__parent_id
+msgid "TK mẹ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__is_general_account
+msgid "TK tổng hợp"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__partner_bank_id
+msgid "TKNH đối tác"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__detail_account_vat_gtgt_ids
+msgid "Tab thuế đầu ra đầu vào"
+msgstr ""
+
+#. module: act_accounting
+#: code:addons/act_accounting/models/account_synthetic.py:0
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__payment_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__payment_synthetic_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__payment_synthetic_id
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__payment_id
+#: model:ir.ui.menu,name:act_accounting.menu_act_accouting_payment_lv1
+#, python-format
+msgid "Thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_accounting_tree_view
+msgid "Thiết lập"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__tax
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__tax
+msgid "Thuế"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_settlement
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic_cashout
+#: model_terms:ir.ui.view,arch_db:act_accounting.move_all_view_inherit
+msgid "Thuế GTGT đầu vào"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__detail_account_vat_gtgt_ids
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__detail_account_vat_gtgt_ids
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__detail_account_vat_gtgt_ids
+msgid "Thuế giá trị gia tăng đầu vào !"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__amount_total
+msgid "Thành tiền"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_indenture_form_view
+msgid "Thông tin chung"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_indenture_form_view
+msgid "Thông tin lãi suất"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__act_payment_inden_ids
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_indenture_form_view
+msgid "Thông tin thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_indenture_form_view
+msgid "Thông tin tài chính"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__amount_invoice
+msgid "Tiền hóa đơn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__method__cash
+#: model:ir.ui.menu,name:act_accounting.menu_cash_accounting
+msgid "Tiền mặt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__money_pay
+msgid "Tiền thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__foreign_currency_money
+msgid "Tiền thanh toán ngoại tệ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__amount_tax
+msgid "Tiền thuế"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__company_currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__company_currency_id
+msgid "Tiền tệ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__state
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__state
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__state
+msgid "Trạng thái"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__detail_acccount_payment_expenditure__fee_th__empty
+msgid "Trống"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__type_journal
+msgid "Type Journal"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__type_pay
+msgid "Type Pay"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__activity_exception_decoration
+#: model:ir.model.fields,help:act_accounting.field_act_advance__activity_exception_decoration
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__account_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__account_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__account_id
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__account_id
+msgid "Tài khoản"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__analytic_account_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__analytic_account_id
+msgid "Tài khoản phân tích"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__account_sett_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__account_sett_id
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__account_sett_id
+msgid "Tài khoản tạm ứng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__name_inden
+msgid "Tên khế ước"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__short_name
+msgid "Tên ngắn"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_fee_group__name
+msgid "Tên nhóm"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_item_fee__name
+msgid "Tên phí"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.res_partner_view_form_act_account
+msgid "Tìm kiếm mã số thuế"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__bank
+msgid "Tại ngân hàng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance_detail__act_advance_id
+#: model:ir.ui.menu,name:act_accounting.menu_advance_accounting
+msgid "Tạm ứng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__province
+msgid "Tỉnh thành"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.ui.menu,name:act_accounting.menu_calculation_all
+msgid "Tổng hợp"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__amount
+msgid "Tổng tiền"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__total_amount_before_tax
+msgid "Tổng tiền trước thuế"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__total_money_approve
+msgid "Tổng tiền được duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__total_money_sugges
+msgid "Tổng tiền đề nghị"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Từ chối"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_bank_statement_line__rate_curr
+#: model:ir.model.fields,field_description:act_accounting.field_account_move__rate_curr
+#: model:ir.model.fields,field_description:act_accounting.field_account_payment__rate_curr
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__rate_currency
+msgid "Tỷ giá"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_unread
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_unread
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__message_unread_counter
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__message_unread_counter
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic_cashout
+msgid "Uỷ nghiệm chi"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+msgid "Vào sổ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__website_message_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_advance__website_message_ids
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,help:act_accounting.field_account_synthetic__website_message_ids
+#: model:ir.model.fields,help:act_accounting.field_act_advance__website_message_ids
+#: model:ir.model.fields,help:act_accounting.field_act_indenture__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_account_synthetic
+msgid "account.synthetic"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_act_account
+msgid "act.account"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_act_advance
+msgid "act.advance"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_act_advance_detail
+msgid "act.advance.detail"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_act_indenture
+msgid "act.indenture"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_act_payment_inden
+msgid "act.payment_inden"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_act_performent
+msgid "act.performent"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_api_accouting_post
+msgid "api.accouting.post"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_detail_acccount_payment_expenditure
+msgid "detail.acccount.payment.expenditure"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_detail_acccount_payment_invoice
+msgid "detail.acccount.payment.invoice"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_detail_acccount_payment_partner
+msgid "detail.acccount.payment.partner"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.res_partner_view_form_act_account
+msgid "e.g. BE0477472701"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_fee_group
+msgid "fee.group"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_item_fee
+msgid "item.fee"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__user_type_id
+msgid "nhóm"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_account__chart_template_id
+msgid "template"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model,name:act_accounting.model_vat_gtgt
+msgid "vat.gtgt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_indenture__type_inden__borrow
+msgid "Đi vay"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__state__approved
+msgid "Đã duyệt"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__state__cancel
+msgid "Đã hủy"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__state__settled
+msgid "Đã quyết toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__paid
+msgid "Đã thanh toán"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields.selection,name:act_accounting.selection__act_advance__state__advanced
+msgid "Đã tạm ứng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_expenditure__partner_receiving_money
+msgid "Đơn vị nhận tiền"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_account__currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__uom_currency_id
+#: model:ir.model.fields,field_description:act_accounting.field_act_payment_inden__uom_currency_id
+msgid "Đơn vị tiền tệ"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.act_advance_form_view
+msgid "Đưa về dự thảo"
+msgstr ""
+
+#. module: act_accounting
+#: model_terms:ir.ui.view,arch_db:act_accounting.form_view_account_synthetic
+msgid "Đặt lại dự thảo"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.actions.act_window,name:act_accounting.action_act_advance
+#: model:ir.ui.menu,name:act_accounting.menu_action_advance
+msgid "Đề nghị tạm ứng"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__address
+#: model:ir.model.fields,field_description:act_accounting.field_vat_gtgt__address
+msgid "Địa chỉ"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_act_indenture__partner_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_invoice__partner_id
+#: model:ir.model.fields,field_description:act_accounting.field_detail_acccount_payment_partner__partner_id
+msgid "Đối tác"
+msgstr ""
+
+#. module: act_accounting
+#: model:ir.model.fields,field_description:act_accounting.field_account_synthetic__detail_account_expenditure_ids
+msgid "Ủy nghiệm chi"
+msgstr ""

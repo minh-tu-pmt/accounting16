@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id='menu_act_accouting_payment_lv1'
+              name='Thanh toán'
+              parent="account_accountant.menu_accounting"
+              sequence='1'/>
+
+    <menuitem id='menu_cash_accounting'
+              name='Tiền mặt'
+              parent="menu_act_accouting_payment_lv1"
+              sequence='1'/>
+
+    <menuitem id='invoice_cash_in_menu'
+              name='Phiếu thu tiền mặt'
+              parent="menu_cash_accounting"
+              action="action_open_payment_cashin"
+              sequence='1'/>
+
+    <menuitem id='invoice_cash_out_menu'
+              name='Phiếu chi tiền mặt'
+              parent="menu_cash_accounting"
+              action="action_open_payment_cashout"
+              sequence='2'/>
+
+    <menuitem id='menu_bank_accounting'
+              name='Ngân hàng'
+              parent="menu_act_accouting_payment_lv1"
+              sequence='2'/>
+
+    <menuitem id='invoic_bank_in_menu'
+              name='Giấy báo có'
+              parent="menu_bank_accounting"
+              action="action_open_payment_cashin_giay_bao_co"
+              sequence='1'/>
+
+        <menuitem id='invoic_bank_out_menu'
+              name='Giấy báo nợ'
+              parent="menu_bank_accounting"
+              action="action_open_payment_cashin_giay_bao_no"
+              sequence='1'/>
+
+    <menuitem id='menu_act_accouting_cate_lv2'
+              name='Danh mục'
+              parent="menu_act_accouting_payment_lv1"
+              sequence='3'/>
+
+<!--    <menuitem id='menu_act_accouting_cash_lv2'-->
+<!--              name='Tiền mặt'-->
+<!--              parent="menu_act_accouting_payment_lv1"-->
+<!--              sequence='1'/>-->
+
+<!--      <record model="ir.actions.act_window" id="action_open_cash_receipt">-->
+<!--            <field name="name">Phiếu thu tiền mặt</field>-->
+<!--            <field name="res_model">account.payment</field>-->
+<!--            <field name="view_mode">tree,form</field>-->
+<!--            <field name="help" type="html">-->
+<!--                <p class="o_view_nocontent_smiling_face">-->
+<!--                    No record found-->
+<!--                </p>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--    <menuitem id='menu_action_cash_receipt'-->
+<!--              name='Phiếu thu tiền mặt'-->
+<!--              parent="eco_accounting.menu_act_accouting_cash_lv2"-->
+<!--              action="eco_accounting.action_open_cash_receipt"-->
+<!--              sequence='1'/>-->
+
+    <menuitem id='menu_action_inden'
+              name='Danh mục khế ước'
+              parent="menu_act_accouting_cate_lv2"
+              action="action_act_indenture"
+              sequence='1'/>
+
+    <menuitem id='menu_advance_accounting'
+              name='Tạm ứng'
+              parent="menu_act_accouting_payment_lv1"
+              sequence='5'/>
+
+    <menuitem id='menu_action_advance'
+              name='Đề nghị tạm ứng'
+              parent="menu_advance_accounting"
+              action="action_act_advance"
+              sequence='1'/>
+
+    <menuitem id='menu_action_settlement'
+              name='Quyết toán tạm ứng'
+              parent="menu_advance_accounting"
+              action="action_open_payment_settlement"
+              sequence='2'/>
+
+    <menuitem id="menu_calculation_all" parent="account_accountant.menu_accounting"  name="Tổng hợp" action="eco_accounting.action_open_move_all" sequence="2"/>
+    <menuitem id="menu_fee_group" parent="account.menu_finance_configuration"  name="Nhóm phí" action="eco_accounting.action_fee_group" sequence="2"/>
+    <menuitem id="menu_item_group" parent="account.menu_finance_configuration"  name="Khoản mục chi phí" action="eco_accounting.action_item_group" sequence="2"/>
+
+</odoo>

@@ -1,0 +1,160 @@
+<template>
+    <t t-name="CashBook" owl="1">
+        <div class="p-3" style="background-color: #fff; font-size: 15px">
+            <div class="d-flex align-items-center"
+                style="padding-bottom: 24px; border-bottom: 1px solid #ccc">
+                <div class="mr-2" style="font-weight: 700">Từ ngày: </div>
+                <DatePicker date="state.from_date" onDateTimeChanged="(date) => this.onDateStartChanged(date)" />
+                <div class="ml-5 mr-2" style="font-weight: 700">Đến ngày: </div>
+                <DatePicker date="state.end_date" onDateTimeChanged="(date) => this.onDateEndChanged(date)" />
+                <div class="ml-5 mr-2" style="font-weight: 700">Đầu tài khoản</div>
+                <InputAutoComplete t-on-change-account="_onChangeAccount" onChangeAccount="data => this._onChangeAccount(data)" />
+                <div class="ml-5">
+                    <button class="btn btn-primary" t-on-click="action_view_report">Xem báo cáo</button>
+                </div>
+                <div class="ml-5">
+                    <button class="btn btn-primary" t-on-click="action_export_report">Xuất execel</button>
+                </div>
+            </div>
+            <div class="d-flex" style="font-size: 15px; margin-top: 32px">
+                <div class="w-50">
+                    <p style="font-weight: 700">
+                        <t t-esc="state.company || 'My Comany'" />
+                    </p>
+                </div>
+                <div class="w-50" style="text-align: center">
+                    <p style="font-weight: 700">
+                        Mẫu số S07-DN
+                    </p>
+                    <p>
+                        (Ban hành theo Thông tư số 200/2014/TT-BTC
+                    </p>
+                    <p>
+                        Ngày 22/12/2014 của Bộ Tài chính)
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div style="text-align: center; font-size: 18px; font-weight: bold">SỔ QUỸ TIỀN MẶT</div>
+                <div class="text-center">Tài khoản: <t t-esc="state.code" /></div>
+                <div class="text-center">Từ ngày <t t-esc="toStrDate(state.from_date)" /> đến ngày <t
+                        t-esc="toStrDate(state.end_date)" /></div>
+            </div>
+            <div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td colspan="6" style="border: none"></td>
+                                <td colspan="2" class="text-right"
+                                    style="border: none; text-transform: uppercase; font-weight: 700">Số
+                                    tồn đầu</td>
+                                <td style="border: none" class="text-right">
+                                    <t t-esc="formatCurrency(state.out_debit)" />
+                                </td>
+                                <td style="border: none"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col" rowspan="2" class="text-center">Chi nhánh</th>
+                                <th scope="col" rowspan="2" class="text-center">Ngày,tháng ghi sổ</th>
+                                <th scope="col" rowspan="2" class="text-center">Ngày,tháng chứng từ</th>
+                                <th scope="col" colspan="2" class="text-center">Số hiệu chứng từ</th>
+                                <th scope="col" rowspan="2" class="text-center">Diễn giải</th>
+                                <th scope="col" colspan="3" class="text-center">Số tiền</th>
+                                <th scope="col" rowspan="2" class="text-center">Ghi chú</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="text-center">Thu</th>
+                                <th scope="col" class="text-center">Chi</th>
+                                <th scope="col" class="text-center">Thu</th>
+                                <th scope="col" class="text-center">Chi</th>
+                                <th scope="col" class="text-center">Tồn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="money" t-value="state.out_debit" />
+                            <t t-set="debit" t-value="0"></t>
+                            <t t-set="credit" t-value="0"></t>
+                            <t t-set="stt" t-value="1"></t>
+                            <t t-foreach="state.move_ids" t-as="move" t-key="'row_'+stt">
+                                <tr >
+                                    <td scope="row">
+                                        <t t-esc="move.company" />
+                                    </td>
+                                    <td>
+                                        <t t-esc="move.date" />
+                                    </td>
+                                    <td>
+                                        <t t-esc="move.date" />
+                                    </td>
+                                    <td>
+                                        <t t-if="move.debit">
+                                            <t t-esc="move.move_name" />
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-if="move.credit">
+                                            <t t-esc="move.move_name" />
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-esc="move.ref" />
+                                    </td>
+                                    <td class="text-right">
+                                        <t t-if="move.debit">
+                                            <t t-esc="formatCurrency(move.debit)" />
+                                        </t>
+                                    </td>
+                                    <td class="text-right">
+                                        <t t-if="move.credit">
+                                            <t t-esc="formatCurrency(move.credit)" />
+                                        </t>
+                                    </td>
+                                    <td class="text-right">
+                                        <t t-esc="formatCurrency(money + move.debit - move.credit)" />
+                                    </td>
+                                    <t t-set="money" t-value="money + move.debit - move.credit" />
+                                    <td></td>
+                                    <t t-set="debit" t-value="debit + move.debit" />
+                                    <t t-set="credit" t-value="credit + move.credit" />
+                                    <t t-set="stt" t-value="stt+1"></t>
+                                </tr>
+                            </t>
+
+                            <tr>
+                                <td colspan="6" style="border: none"></td>
+                                <td colspan="2" class="text-right"
+                                    style="border: none; text-transform: uppercase; font-weight: 700">Tổng
+                                    phát sinh nợ</td>
+                                <td style="border: none" class="text-right">
+                                    <t t-esc="formatCurrency(debit)" />
+                                </td>
+                                <td style="border: none"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="border: none"></td>
+                                <td colspan="2" class="text-right"
+                                    style="border: none; text-transform: uppercase; font-weight: 700">Tổng
+                                    phát sinh có</td>
+                                <td style="border: none" class="text-right">
+                                    <t t-esc="formatCurrency(credit)" />
+                                </td>
+                                <td style="border: none"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="border: none"></td>
+                                <td colspan="2" class="text-right"
+                                    style="border: none; text-transform: uppercase; font-weight: 700">Số
+                                    tồn cuối</td>
+                                <td style="border: none" class="text-right">
+                                    <t t-esc="formatCurrency(money)" />
+                                </td>
+                                <td style="border: none"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="act_advance_form_wizard_view" model="ir.ui.view">
+        <field name="name">act.advance.form.wizard</field>
+        <field name="model">act.flow.advanced</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="account_move_id" invisible="1"/>
+                    <div>
+                        <p>Số tiền quyết toán vượt số tiền đã tạm ứng. Bạn có muốn tạo phiếu chi bổ sung cho nhân viên?</p>
+                    </div>
+                    <footer>
+                        <button string="Có" name="action_accept_advanced" type="object" class="oe_highlight" data-hotkey="q"/>
+                        <button string="Không"  name="action_reject_advanced" class="btn btn-secondary"  data-hotkey="z"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="act_advance_form_wizard2_o_view" model="ir.ui.view">
+        <field name="name">act.advance.form.wizard</field>
+        <field name="model">act.flow.advanced</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="account_move_id" invisible="1"/>
+                    <div>
+                        <p>Số tiền quyết toán nhỏ hơn số tiền đã tạm ứng. Bạn có muốn hoàn ứng thu tiền nhân viên?</p>
+                    </div>
+                    <footer>
+                        <button string="Có" name="action_give_back_advanced" type="object" class="oe_highlight" data-hotkey="q"/>
+                        <button string="Không"  name="action_reject_advanced" class="btn btn-secondary"  data-hotkey="z"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

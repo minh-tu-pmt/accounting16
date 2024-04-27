@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="action_open_move_all">
+            <field name="name">Phiếu kế toán tổng hợp</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('move_type','=','entry')]</field>
+            <field name="context">{'default_move_type': 'entry'}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  No record found
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="move_form_inherit">
+            <field name="name">move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='ref']" position="attributes">
+                    <attribute name="string">Diễn giải</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="move_all_view_inherit">
+            <field name="name">move.all.view.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='ref']" position="after">
+                    <field name="rate_curr" attrs="{'invisible': [('move_type', '!=', 'entry')]}"/>
+                    <field name="settle_true" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='ref'][1]" position="attributes">
+                    <attribute name="string">Diễn giải</attribute>
+                </xpath>
+                <xpath expr="//field[@name='ref'][2]" position="attributes">
+                    <attribute name="string">Diễn giải</attribute>
+                </xpath>
+<!--                <xpath expr="//label[@for='ref'][2]" position="attributes">-->
+<!--                    <attribute name="string">Diễn giải</attribute>-->
+<!--                </xpath>-->
+                <xpath expr="//field[@name='journal_id']" position="attributes">
+                    <attribute name="domain">[('type','=', 'general'), ('id', 'in', suitable_journal_ids)]</attribute>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']//tree//field[@name='account_id']" position="attributes">
+                    <attribute name="domain">[('is_general_account', '=', False)]</attribute>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']//tree" position="inside">
+                    <field name="check_curr" invisible="True"/>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']//tree//field[@name='tax_tag_ids']" position="after">
+                    <field name="department_id"/>
+                    <field name="group_clause"/>
+                    <field name="item_fee_id"/>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']//tree//field[@name='analytic_distribution']" position="after">
+                    <field name="indenture_id"/>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']//tree//field[@name='amount_currency']" position="attributes">
+                    <attribute name="attrs">{'required': [('parent.move_type','=', 'entry')], 'invisible': [('check_curr','=', True)]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']//tree//field[@name='name']" position="attributes">
+                    <attribute name="string">Diễn giải</attribute>
+                </xpath>
+                <xpath expr="//page[@id='aml_tab']" position="after">
+                    <page string="Thuế GTGT đầu vào" attrs="{'invisible': [('move_type', '!=', 'entry')]}">
+                        <field name="detail_account_vat_gtgt_ids"
+                                       mode="tree">
+                            <tree editable="bottom" string="Thuế GTGT đầu vào">
+                                <field name="ref"/>
+                                <field name="move_group"/>
+                                <field name="sign"/>
+                                <field name="invoice_number"/>
+                                <field name="invoice_date"/>
+                                <field name="vendor"/>
+                                <field name="address"/>
+                                <field name="tax_code"/>
+                                <field name="total_amount_before_tax" widget="monetary"/>
+                                <field name="tax"/>
+                                <field name="amount_tax" widget="monetary"/>
+                                <field name="amount_total"/>
+                                <field name="account_id"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

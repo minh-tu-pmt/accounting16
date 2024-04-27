@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.act.acccount,access_act_acccount,"eco_accounting.model_act_account",base.group_erp_manager,1,1,1,1
+access.act.indenture,access_act_indenture,eco_accounting.model_act_indenture,account.group_account_invoice,1,1,1,1
+access.act.performent,access_act_performent,eco_accounting.model_act_performent,account.group_account_invoice,1,1,1,1
+access.act.payment_inden,access_act_payment_inden,eco_accounting.model_act_payment_inden,account.group_account_invoice,1,1,1,1
+access.fee.group,access_fee_group,eco_accounting.model_fee_group,account.group_account_invoice,1,1,1,1
+access.fee.item,access_fee_item,eco_accounting.model_item_fee,account.group_account_invoice,1,1,1,1
+access.vat.gtgt,access_vat_gtgt,eco_accounting.model_vat_gtgt,account.group_account_invoice,1,1,1,1
+access.detail.acccount.payment.invoice,access_detail_acccount_payment.invoice,eco_accounting.model_detail_acccount_payment_invoice,account.group_account_invoice,1,1,1,1
+access.detail.acccount.payment.partner,access_detail_acccount_payment.partner,eco_accounting.model_detail_acccount_payment_partner,account.group_account_invoice,1,1,1,1
+access.account.synthetic,access_account_synthetic,eco_accounting.model_account_synthetic,account.group_account_invoice,1,1,1,1
+access.act.advance.detail,access_act_advance_detail,eco_accounting.model_act_advance_detail,account.group_account_invoice,1,1,1,1
+access.act.advance,access_act_advance,eco_accounting.model_act_advance,account.group_account_invoice,1,1,1,1
+access.act.flow.advanced,access_act_flow_advanced,eco_accounting.model_act_flow_advanced,account.group_account_invoice,1,1,1,1
+access.detail.acccount.payment.expenditure,access_detail_acccount_payment_expenditure,eco_accounting.model_detail_acccount_payment_expenditure,account.group_account_invoice,1,1,1,1

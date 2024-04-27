@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+
+{
+    'name': 'Eco Accounting',
+    'version': '1.0.0',
+    'category': '',
+    'sequence': -1,
+    'summary': '',
+    'description': """""",
+    'depends': ['base','account_accountant','mail', 'hr', 'l10n_vn'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/act.account.csv',
+        'views/act_accounting_views.xml',
+        'data/sequence.xml',
+        'views/fee_group.xml',
+        'views/items_fee.xml',
+        'views/account_synthetic.xml',
+        'views/account_synthetic_send.xml',
+        'views/advance_settlement_view.xml',
+        'views/act_advance_view.xml',
+        'views/account_move.xml',
+        'wizard/account_payment_register.xml',
+        'wizard/action_post_flow_advanced_view.xml',
+        'views/act_indenture_view.xml',
+        'views/menu.xml',
+        'views/res_config_settings_views.xml',
+        'views/res_partner_view.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'assets': {
+    },
+    'application': True,
+    'auto_install': False,
+}
